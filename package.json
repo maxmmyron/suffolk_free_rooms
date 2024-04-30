@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx cross-env NODE_EXTRA_CA_CERTS=./certs/intermediate.pem npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
