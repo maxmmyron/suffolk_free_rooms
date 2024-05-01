@@ -3,8 +3,7 @@ import fs from "node:fs/promises";
 
 type Meeting = { location: string, startTime: string, endTime: string, days: string };
 
-const USE_SHORT_API_REQUEST = false;
-
+const USE_SHORT_API_REQUEST = true;
 
 /**
    * TypeError: fetch failed
@@ -69,6 +68,7 @@ test("Find Sections", async ({ page, request }) => {
   // STEP 1: GET COURSE/SECTION IDs
   // --------------------------------------------
 
+  console.debug("Navigating to page... ");
   await page.goto('https://prodss.suffolk.edu/Student/Courses/Search');
 
   // FIXME: implement
@@ -85,6 +85,7 @@ test("Find Sections", async ({ page, request }) => {
     let numPerPage = 100;
     if (USE_SHORT_API_REQUEST) numPerPage = 10;
 
+    console.debug("Fetching course page 1... ");
     res = await fetch("https://prodss.suffolk.edu/Student/Courses/SearchAsync", {
       "headers": {
         "__isguestuser": "true",
@@ -129,6 +130,7 @@ test("Find Sections", async ({ page, request }) => {
   // DEBUG: we skip over this if we're using the short api request
   if (!USE_SHORT_API_REQUEST) {
     for (let i = 2; i <= data.TotalPages; i++) {
+      console.debug(`Fetching course page ${i}... `);
       let res = await fetch("https://prodss.suffolk.edu/Student/Courses/SearchAsync", {
         "headers": {
           "__isguestuser": "true",
@@ -162,7 +164,7 @@ test("Find Sections", async ({ page, request }) => {
     }
   }
 
-  let titleLen = Math.max(...courseData.map(c => c.title.length));
+  let titleLen = Math.max(...courseData.map(c => c.title.length)) + 2;
   let locationLen = 32;
   let timeLen = 20;
   let daysLen = 16;
@@ -227,14 +229,15 @@ test("Find Sections", async ({ page, request }) => {
     // parse data into struct
     let meetings: Array<Meeting> = [...new Set<Meeting>(data.TermsAndSections[0].Sections.map((section: any) =>
       section.Section.FormattedMeetingTimes
-        .filter((formattedMeetingTime: any) => formattedMeetingTime.InstructionalMethodDisplay !== "LECTURE")
+        .filter((formattedMeetingTime: any) => formattedMeetingTime.InstructionalMethodDisplay === "LECTURE")
         .map((formattedMeetingTime: any) => ({
+          section: section.Section.SectionNameDisplay,
           location: formattedMeetingTime.BuildingDisplay + " " + formattedMeetingTime.RoomDisplay,
           startTime: formattedMeetingTime.StartTimeDisplay,
           endTime: formattedMeetingTime.EndTimeDisplay,
           days: formattedMeetingTime.DaysOfWeekDisplay
         }))
-    ).flat())];
+    ))].flat();
 
     courseSectionLocations.push({
       title: course.title,
@@ -264,7 +267,7 @@ test("Find Sections", async ({ page, request }) => {
   console.log(JSON.stringify(courseSectionLocations, null, 2));
 
   try {
-    await fs.writeFile(`sections_${Date.now()}.json`, JSON.stringify(formattedData, null, 2));
+    await fs.writeFile(`.output/sections_${Date.now()}.json`, JSON.stringify(formattedData, null, 2));
   } catch (e) {
     console.log("Failed to write file")
     console.error(e);
