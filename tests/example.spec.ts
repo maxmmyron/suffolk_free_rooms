@@ -1,6 +1,10 @@
 import { test, expect, APIResponse } from '@playwright/test';
+import fs from "node:fs/promises";
 
 type Meeting = { location: string, startTime: string, endTime: string, days: string };
+
+const USE_SHORT_API_REQUEST = false;
+
 
 /**
    * TypeError: fetch failed
@@ -78,6 +82,9 @@ test("Find Sections", async ({ page, request }) => {
   let res: Response | null = null;
 
   try {
+    let numPerPage = 100;
+    if (USE_SHORT_API_REQUEST) numPerPage = 10;
+
     res = await fetch("https://prodss.suffolk.edu/Student/Courses/SearchAsync", {
       "headers": {
         "__isguestuser": "true",
@@ -97,7 +104,7 @@ test("Find Sections", async ({ page, request }) => {
         "Referer": "https://prodss.suffolk.edu/Student/Courses/Search",
         "Referrer-Policy": "strict-origin-when-cross-origin"
       },
-      "body": "{\"searchParameters\":\"{\\\"keyword\\\":\\\"\\\",\\\"terms\\\":[\\\"24/SP\\\"],\\\"requirement\\\":null,\\\"subrequirement\\\":null,\\\"courseIds\\\":null,\\\"sectionIds\\\":null,\\\"requirementText\\\":null,\\\"subrequirementText\\\":\\\"\\\",\\\"group\\\":null,\\\"startTime\\\":0,\\\"endTime\\\":1440,\\\"openSections\\\":false,\\\"subjects\\\":[],\\\"academicLevels\\\":[],\\\"courseLevels\\\":[],\\\"synonyms\\\":[],\\\"courseTypes\\\":[],\\\"topicCodes\\\":[],\\\"days\\\":[],\\\"locations\\\":[\\\"ONC\\\"],\\\"faculty\\\":[],\\\"onlineCategories\\\":[],\\\"keywordComponents\\\":[],\\\"startDate\\\":null,\\\"endDate\\\":null,\\\"startsAtTime\\\":null,\\\"endsByTime\\\":null,\\\"pageNumber\\\":1,\\\"sortOn\\\":2,\\\"sortDirection\\\":0,\\\"subjectsBadge\\\":[],\\\"locationsBadge\\\":[{\\\"Value\\\":\\\"ONC\\\",\\\"Description\\\":\\\"On Campus\\\",\\\"Count\\\":1847,\\\"Selected\\\":true,\\\"descriptionToDisplay\\\":\\\"On Campus (1847)\\\"}],\\\"termFiltersBadge\\\":[{\\\"Value\\\":\\\"24/SP\\\",\\\"Description\\\":\\\"Spring 2024\\\",\\\"Count\\\":608,\\\"Selected\\\":true,\\\"descriptionToDisplay\\\":\\\"Spring 2024 (608)\\\"}],\\\"daysBadge\\\":[],\\\"facultyBadge\\\":[],\\\"academicLevelsBadge\\\":[],\\\"courseLevelsBadge\\\":[],\\\"courseTypesBadge\\\":[],\\\"topicCodesBadge\\\":[],\\\"onlineCategoriesBadge\\\":[],\\\"openSectionsBadge\\\":false,\\\"openAndWaitlistedSectionsBadge\\\":false,\\\"subRequirementText\\\":null,\\\"quantityPerPage\\\":100,\\\"openAndWaitlistedSections\\\":false,\\\"searchResultsView\\\":\\\"CatalogListing\\\"}\"}",
+      "body": "{\"searchParameters\":\"{\\\"keyword\\\":\\\"\\\",\\\"terms\\\":[\\\"24/SP\\\"],\\\"requirement\\\":null,\\\"subrequirement\\\":null,\\\"courseIds\\\":null,\\\"sectionIds\\\":null,\\\"requirementText\\\":null,\\\"subrequirementText\\\":\\\"\\\",\\\"group\\\":null,\\\"startTime\\\":0,\\\"endTime\\\":1440,\\\"openSections\\\":false,\\\"subjects\\\":[],\\\"academicLevels\\\":[],\\\"courseLevels\\\":[],\\\"synonyms\\\":[],\\\"courseTypes\\\":[],\\\"topicCodes\\\":[],\\\"days\\\":[],\\\"locations\\\":[\\\"ONC\\\"],\\\"faculty\\\":[],\\\"onlineCategories\\\":[],\\\"keywordComponents\\\":[],\\\"startDate\\\":null,\\\"endDate\\\":null,\\\"startsAtTime\\\":null,\\\"endsByTime\\\":null,\\\"pageNumber\\\":1,\\\"sortOn\\\":2,\\\"sortDirection\\\":0,\\\"subjectsBadge\\\":[],\\\"locationsBadge\\\":[{\\\"Value\\\":\\\"ONC\\\",\\\"Description\\\":\\\"On Campus\\\",\\\"Count\\\":1847,\\\"Selected\\\":true,\\\"descriptionToDisplay\\\":\\\"On Campus (1847)\\\"}],\\\"termFiltersBadge\\\":[{\\\"Value\\\":\\\"24/SP\\\",\\\"Description\\\":\\\"Spring 2024\\\",\\\"Count\\\":608,\\\"Selected\\\":true,\\\"descriptionToDisplay\\\":\\\"Spring 2024 (608)\\\"}],\\\"daysBadge\\\":[],\\\"facultyBadge\\\":[],\\\"academicLevelsBadge\\\":[],\\\"courseLevelsBadge\\\":[],\\\"courseTypesBadge\\\":[],\\\"topicCodesBadge\\\":[],\\\"onlineCategoriesBadge\\\":[],\\\"openSectionsBadge\\\":false,\\\"openAndWaitlistedSectionsBadge\\\":false,\\\"subRequirementText\\\":null,\\\"quantityPerPage\\\":"+numPerPage+",\\\"openAndWaitlistedSections\\\":false,\\\"searchResultsView\\\":\\\"CatalogListing\\\"}\"}",
       "method": "POST"
     });
   } catch (e) {
@@ -119,37 +126,40 @@ test("Find Sections", async ({ page, request }) => {
     sections: course.MatchingSectionIds,
   }));
 
-  for (let i = 2; i <= data.TotalPages; i++) {
-    let res = await fetch("https://prodss.suffolk.edu/Student/Courses/SearchAsync", {
-      "headers": {
-        "__isguestuser": "true",
-        "__requestverificationtoken": "G0iD4p47TLElFnljD09SLGVEleJEn8oJbDDKF82yBL3SMqgLjgK1beN5jSfwSQbUngPZvmDhRFNsCVWGOjYi5-6ACfnOxV2at3wDhHPP-s41",
-        "accept": "application/json, text/javascript, */*; q=0.01",
-        "accept-language": "en-US,en;q=0.9",
-        "content-type": "application/json, charset=UTF-8",
-        "priority": "u=1, i",
-        "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Chromium\";v=\"124\"",
-        "sec-ch-ua-mobile": "?1",
-        "sec-ch-ua-platform": "\"Android\"",
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "same-origin",
-        "x-requested-with": "XMLHttpRequest",
-        "cookie": "_ga=GA1.2.1654894405.1705425235; __RequestVerificationToken_L1N0dWRlbnQ1=relYR47ZDTWi9BV0t3sa2NiwZ1qPNw-DxBNwCgMvYVxy1QpVeO_Iw3zelEDXwsdQG4iMhOiS1dtzQ5u9lstM8JQIYS9-SBXKhfPWGA8DYbo1; _sp=%257B%2522id%2522%253A%2522232664a9-db26-483b-8270-720cb6d391a9%2522%257D",
-        "Referer": "https://prodss.suffolk.edu/Student/Courses/Search",
-        "Referrer-Policy": "strict-origin-when-cross-origin"
-      },
-      "body": "{\"searchParameters\":\"{\\\"keyword\\\":\\\"\\\",\\\"terms\\\":[\\\"24/SP\\\"],\\\"requirement\\\":null,\\\"subrequirement\\\":null,\\\"courseIds\\\":null,\\\"sectionIds\\\":null,\\\"requirementText\\\":null,\\\"subrequirementText\\\":\\\"\\\",\\\"group\\\":null,\\\"startTime\\\":0,\\\"endTime\\\":1440,\\\"openSections\\\":false,\\\"subjects\\\":[],\\\"academicLevels\\\":[],\\\"courseLevels\\\":[],\\\"synonyms\\\":[],\\\"courseTypes\\\":[],\\\"topicCodes\\\":[],\\\"days\\\":[],\\\"locations\\\":[\\\"ONC\\\"],\\\"faculty\\\":[],\\\"onlineCategories\\\":[],\\\"keywordComponents\\\":[],\\\"startDate\\\":null,\\\"endDate\\\":null,\\\"startsAtTime\\\":null,\\\"endsByTime\\\":null,\\\"pageNumber\\\":"+i+",\\\"sortOn\\\":2,\\\"sortDirection\\\":0,\\\"subjectsBadge\\\":[],\\\"locationsBadge\\\":[{\\\"Value\\\":\\\"ONC\\\",\\\"Description\\\":\\\"On Campus\\\",\\\"Count\\\":1847,\\\"Selected\\\":true,\\\"descriptionToDisplay\\\":\\\"On Campus (1847)\\\"}],\\\"termFiltersBadge\\\":[{\\\"Value\\\":\\\"24/SP\\\",\\\"Description\\\":\\\"Spring 2024\\\",\\\"Count\\\":608,\\\"Selected\\\":true,\\\"descriptionToDisplay\\\":\\\"Spring 2024 (608)\\\"}],\\\"daysBadge\\\":[],\\\"facultyBadge\\\":[],\\\"academicLevelsBadge\\\":[],\\\"courseLevelsBadge\\\":[],\\\"courseTypesBadge\\\":[],\\\"topicCodesBadge\\\":[],\\\"onlineCategoriesBadge\\\":[],\\\"openSectionsBadge\\\":false,\\\"openAndWaitlistedSectionsBadge\\\":false,\\\"subRequirementText\\\":null,\\\"quantityPerPage\\\":100,\\\"openAndWaitlistedSections\\\":false,\\\"searchResultsView\\\":\\\"CatalogListing\\\"}\"}",
-      "method": "POST"
-    });
+  // DEBUG: we skip over this if we're using the short api request
+  if (!USE_SHORT_API_REQUEST) {
+    for (let i = 2; i <= data.TotalPages; i++) {
+      let res = await fetch("https://prodss.suffolk.edu/Student/Courses/SearchAsync", {
+        "headers": {
+          "__isguestuser": "true",
+          "__requestverificationtoken": "G0iD4p47TLElFnljD09SLGVEleJEn8oJbDDKF82yBL3SMqgLjgK1beN5jSfwSQbUngPZvmDhRFNsCVWGOjYi5-6ACfnOxV2at3wDhHPP-s41",
+          "accept": "application/json, text/javascript, */*; q=0.01",
+          "accept-language": "en-US,en;q=0.9",
+          "content-type": "application/json, charset=UTF-8",
+          "priority": "u=1, i",
+          "sec-ch-ua": "\"Not-A.Brand\";v=\"99\", \"Chromium\";v=\"124\"",
+          "sec-ch-ua-mobile": "?1",
+          "sec-ch-ua-platform": "\"Android\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "same-origin",
+          "x-requested-with": "XMLHttpRequest",
+          "cookie": "_ga=GA1.2.1654894405.1705425235; __RequestVerificationToken_L1N0dWRlbnQ1=relYR47ZDTWi9BV0t3sa2NiwZ1qPNw-DxBNwCgMvYVxy1QpVeO_Iw3zelEDXwsdQG4iMhOiS1dtzQ5u9lstM8JQIYS9-SBXKhfPWGA8DYbo1; _sp=%257B%2522id%2522%253A%2522232664a9-db26-483b-8270-720cb6d391a9%2522%257D",
+          "Referer": "https://prodss.suffolk.edu/Student/Courses/Search",
+          "Referrer-Policy": "strict-origin-when-cross-origin"
+        },
+        "body": "{\"searchParameters\":\"{\\\"keyword\\\":\\\"\\\",\\\"terms\\\":[\\\"24/SP\\\"],\\\"requirement\\\":null,\\\"subrequirement\\\":null,\\\"courseIds\\\":null,\\\"sectionIds\\\":null,\\\"requirementText\\\":null,\\\"subrequirementText\\\":\\\"\\\",\\\"group\\\":null,\\\"startTime\\\":0,\\\"endTime\\\":1440,\\\"openSections\\\":false,\\\"subjects\\\":[],\\\"academicLevels\\\":[],\\\"courseLevels\\\":[],\\\"synonyms\\\":[],\\\"courseTypes\\\":[],\\\"topicCodes\\\":[],\\\"days\\\":[],\\\"locations\\\":[\\\"ONC\\\"],\\\"faculty\\\":[],\\\"onlineCategories\\\":[],\\\"keywordComponents\\\":[],\\\"startDate\\\":null,\\\"endDate\\\":null,\\\"startsAtTime\\\":null,\\\"endsByTime\\\":null,\\\"pageNumber\\\":"+i+",\\\"sortOn\\\":2,\\\"sortDirection\\\":0,\\\"subjectsBadge\\\":[],\\\"locationsBadge\\\":[{\\\"Value\\\":\\\"ONC\\\",\\\"Description\\\":\\\"On Campus\\\",\\\"Count\\\":1847,\\\"Selected\\\":true,\\\"descriptionToDisplay\\\":\\\"On Campus (1847)\\\"}],\\\"termFiltersBadge\\\":[{\\\"Value\\\":\\\"24/SP\\\",\\\"Description\\\":\\\"Spring 2024\\\",\\\"Count\\\":608,\\\"Selected\\\":true,\\\"descriptionToDisplay\\\":\\\"Spring 2024 (608)\\\"}],\\\"daysBadge\\\":[],\\\"facultyBadge\\\":[],\\\"academicLevelsBadge\\\":[],\\\"courseLevelsBadge\\\":[],\\\"courseTypesBadge\\\":[],\\\"topicCodesBadge\\\":[],\\\"onlineCategoriesBadge\\\":[],\\\"openSectionsBadge\\\":false,\\\"openAndWaitlistedSectionsBadge\\\":false,\\\"subRequirementText\\\":null,\\\"quantityPerPage\\\":100,\\\"openAndWaitlistedSections\\\":false,\\\"searchResultsView\\\":\\\"CatalogListing\\\"}\"}",
+        "method": "POST"
+      });
 
-    let data = await res.json();
+      let data = await res.json();
 
-    courseData = courseData.concat(data.Courses.map((course:any) => ({
-      title: course.Title,
-      id: course.Id,
-      sections: course.MatchingSectionIds,
-    })));
+      courseData = courseData.concat(data.Courses.map((course:any) => ({
+        title: course.Title,
+        id: course.Id,
+        sections: course.MatchingSectionIds,
+      })));
+    }
   }
 
   let titleLen = Math.max(...courseData.map(c => c.title.length));
@@ -162,13 +172,14 @@ test("Find Sections", async ({ page, request }) => {
   // --------------------------------------------
 
   let courseSectionLocations: Array<{title: string, meetings: Array<Meeting>}> = [];
+  let formattedData: {[key: string]: {data: any}} = {};
 
   // DEBUG: start cli table
   console.log(`╔${"═".padEnd(titleLen, "═")}╦${"═".padEnd(locationLen, "═")}╦${"═".padEnd(timeLen, "═")}╦${"═".padEnd(daysLen, "═")}╗`);
   console.log(`║${" COURSE TITLE".padEnd(titleLen, " ")}║${" LOCATION".padEnd(locationLen, " ")}║${" TIME".padEnd(timeLen, " ")}║${" DAYS".padEnd(daysLen, " ")}║▒`);
   console.log(`╠${"═".padEnd(titleLen, "═")}╬${"═".padEnd(locationLen, "═")}╬${"═".padEnd(timeLen, "═")}╬${"═".padEnd(daysLen, "═")}╣▒`);
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < courseData.length; i++) {
     // DEBUG: print out course info into cli table
     if (i!==0) {
       console.log(`╟${"─".padEnd(titleLen, "─")}╫${"─".padEnd(locationLen, "─")}╫${"─".padEnd(timeLen, "─")}╫${"─".padEnd(daysLen, "─")}╢▒`);
@@ -211,6 +222,8 @@ test("Find Sections", async ({ page, request }) => {
 
     let data = await res.json();
 
+    formattedData[course.id] = data;
+
     // parse data into struct
     let meetings: Array<Meeting> = [...new Set<Meeting>(data.TermsAndSections[0].Sections.map((section: any) =>
       section.Section.FormattedMeetingTimes
@@ -249,4 +262,11 @@ test("Find Sections", async ({ page, request }) => {
   }
 
   console.log(JSON.stringify(courseSectionLocations, null, 2));
+
+  try {
+    await fs.writeFile(`sections_${Date.now()}.json`, JSON.stringify(formattedData, null, 2));
+  } catch (e) {
+    console.log("Failed to write file")
+    console.error(e);
+  }
 });
