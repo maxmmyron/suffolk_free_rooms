@@ -1,4 +1,4 @@
-import { test, expect, APIResponse } from '@playwright/test';
+import { test, type APIResponse } from '@playwright/test';
 import fs from "node:fs/promises";
 
 type Meeting = { location: string, startTime: string, endTime: string, days: string };
