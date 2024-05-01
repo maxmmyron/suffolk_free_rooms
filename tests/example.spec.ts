@@ -1,4 +1,6 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, APIResponse } from '@playwright/test';
+
+type Meeting = { location: string, startTime: string, endTime: string, days: string };
 
 /**
    * TypeError: fetch failed
@@ -58,78 +60,19 @@ import { test, expect } from '@playwright/test';
    * solves issue (haven't tried with --ui flag)
    */
 
-test('Find Courses', async ({ page }) => {
-  await page.goto('https://www.suffolk.edu/coursesearch/courses');
-
-  // first pass
-  let res = await fetch("https://www.suffolk.edu/coursesearch/api/SearchCourses", {
-    "credentials": "include",
-    "headers": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
-        "Accept": "*/*",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Content-Type": "application/json",
-        "Sec-GPC": "1",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-        "Pragma": "no-cache",
-        "Cache-Control": "no-cache"
-    },
-    "referrer": "https://www.suffolk.edu/coursesearch/courses",
-    "body": "{\"AcademicLevel\":[\"Undergraduate\"],\"Subject\":[],\"AcademicPeriod\":[\"Fall 2024\"],\"Campus\":[],\"DeliveryMode\":[\"In-Person\",\"Hybrid\"],\"CourseStatus\":[],\"SectionCapacity\":[],\"MeetingDay\":[],\"MeetingTime\":[],\"Page\":1,\"PageSize\":500}",
-    "method": "POST",
-    "mode": "cors"
-  });
-
-  let courseTitles: Array<string> = [];
-
-  let data = await res.json();
-
-  courseTitles = data.Courses.map((course:any) => course.SectionTitle);
-
-  const total = data.Total;
-  const pages = Math.ceil(total / 500);
-
-  for (let i = 2; i <= pages; i++) {
-    let res = await fetch("https://www.suffolk.edu/coursesearch/api/SearchCourses", {
-      "credentials": "include",
-      "headers": {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
-          "Accept": "*/*",
-          "Accept-Language": "en-US,en;q=0.5",
-          "Content-Type": "application/json",
-          "Sec-GPC": "1",
-          "Sec-Fetch-Dest": "empty",
-          "Sec-Fetch-Mode": "cors",
-          "Sec-Fetch-Site": "same-origin",
-          "Pragma": "no-cache",
-          "Cache-Control": "no-cache"
-      },
-      "referrer": "https://www.suffolk.edu/coursesearch/courses",
-      "body": "{\"AcademicLevel\":[\"Undergraduate\"],\"Subject\":[],\"AcademicPeriod\":[\"Fall 2024\"],\"Campus\":[],\"DeliveryMode\":[\"In-Person\",\"Hybrid\"],\"CourseStatus\":[],\"SectionCapacity\":[],\"MeetingDay\":[],\"MeetingTime\":[],\"Page\":"+i+",\"PageSize\":500}",
-      "method": "POST",
-      "mode": "cors"
-    });
-
-    let data = await res.json();
-
-    courseTitles = courseTitles.concat(data.Courses.map((course:any) => course.SectionTitle));
-  }
-
-  console.log(`Total courses: ${total} (${courseTitles.length})`);
-  console.log(courseTitles);
-});
-
 test("Find Sections", async ({ page, request }) => {
   // --------------------------------------------
-  // GET COURSE/SECTION IDs
+  // STEP 1: GET COURSE/SECTION IDs
   // --------------------------------------------
 
   await page.goto('https://prodss.suffolk.edu/Student/Courses/Search');
 
   // FIXME: implement
+  // maybe unnecessary idk
   const token = await page.$eval('input[name="__RequestVerificationToken"]', (el) => el.getAttribute('value'));
+  if (!token) {
+    throw new Error("Token not found");
+  }
 
   // first pass
   let res: Response | null = null;
@@ -209,18 +152,34 @@ test("Find Sections", async ({ page, request }) => {
     })));
   }
 
-  if (!token) {
-    throw new Error("Token not found");
-  }
+  let titleLen = Math.max(...courseData.map(c => c.title.length));
+  let locationLen = 32;
+  let timeLen = 20;
+  let daysLen = 16;
 
-  let courseSectionLocations: Array<{title: string, locations: Array<string>}> = [];
+  // --------------------------------------------
+  // STEP 2: GET LOCATIONS
+  // --------------------------------------------
+
+  let courseSectionLocations: Array<{title: string, meetings: Array<Meeting>}> = [];
+
+  // DEBUG: start cli table
+  console.log(`╔${"═".padEnd(titleLen, "═")}╦${"═".padEnd(locationLen, "═")}╦${"═".padEnd(timeLen, "═")}╦${"═".padEnd(daysLen, "═")}╗`);
+  console.log(`║${" COURSE TITLE".padEnd(titleLen, " ")}║${" LOCATION".padEnd(locationLen, " ")}║${" TIME".padEnd(timeLen, " ")}║${" DAYS".padEnd(daysLen, " ")}║▒`);
+  console.log(`╠${"═".padEnd(titleLen, "═")}╬${"═".padEnd(locationLen, "═")}╬${"═".padEnd(timeLen, "═")}╬${"═".padEnd(daysLen, "═")}╣▒`);
 
   for (let i = 0; i < 5; i++) {
+    // DEBUG: print out course info into cli table
+    if (i!==0) {
+      console.log(`╟${"─".padEnd(titleLen, "─")}╫${"─".padEnd(locationLen, "─")}╫${"─".padEnd(timeLen, "─")}╫${"─".padEnd(daysLen, "─")}╢▒`);
+    }
+
     const course = courseData[i];
     const sections = `[${course.sections.map(c => `\"${c}\"`).join(",")}]`;
 
+    let res: APIResponse | null = null;
     try {
-      let res = await request.post("https://prodss.suffolk.edu/Student/Courses/SectionsAsync", {
+      res = await request.post("https://prodss.suffolk.edu/Student/Courses/SectionsAsync", {
         "headers": {
           "__isguestuser": "true",
           "__requestverificationtoken": "G0iD4p47TLElFnljD09SLGVEleJEn8oJbDDKF82yBL3SMqgLjgK1beN5jSfwSQbUngPZvmDhRFNsCVWGOjYi5-6ACfnOxV2at3wDhHPP-s41",
@@ -241,31 +200,53 @@ test("Find Sections", async ({ page, request }) => {
         },
         "data": "{\"courseId\":\""+course.id+"\",\"sectionIds\":"+sections+"}",
       });
-
-      let data = await res.json();
-
-      let locations = new Set<string>(data.TermsAndSections[0].Sections.map((section: any) =>
-        section.Section.FormattedMeetingTimes
-          // remove finals locations
-          .filter((formattedMeetingTime: any) => formattedMeetingTime.InstructionalMethodDisplay !== "LECTURE")
-          // get the building and room
-          .map((formattedMeetingTime: any) => formattedMeetingTime.BuildingDisplay + " " + formattedMeetingTime.RoomDisplay)
-      ).flat());
-
-      courseSectionLocations.push({
-        title: course.title,
-        locations: [...locations],
-      });
-
-      console.log({
-        title: course.title,
-        locations: [...locations],
-      });
-
-      console.log("--------------------------------------------------")
     } catch (e) {
       console.log("Erroring attempting to fetch sections");
       console.error(e);
     }
+
+    if (!res) {
+      throw new Error("No response");
+    }
+
+    let data = await res.json();
+
+    // parse data into struct
+    let meetings: Array<Meeting> = [...new Set<Meeting>(data.TermsAndSections[0].Sections.map((section: any) =>
+      section.Section.FormattedMeetingTimes
+        .filter((formattedMeetingTime: any) => formattedMeetingTime.InstructionalMethodDisplay !== "LECTURE")
+        .map((formattedMeetingTime: any) => ({
+          location: formattedMeetingTime.BuildingDisplay + " " + formattedMeetingTime.RoomDisplay,
+          startTime: formattedMeetingTime.StartTimeDisplay,
+          endTime: formattedMeetingTime.EndTimeDisplay,
+          days: formattedMeetingTime.DaysOfWeekDisplay
+        }))
+    ).flat())];
+
+    courseSectionLocations.push({
+      title: course.title,
+      meetings,
+    });
+
+    // DEBUG: print out course info into cli table
+    for (let i = 0; i < meetings.length; i++) {
+      let paddedTitle = ` ${course.title}`.padEnd(titleLen, " ");
+      if(i !== 0) paddedTitle = " ".padEnd(titleLen, " ");
+      let paddedLocation = ` ${meetings[i].location}`.padEnd(locationLen, " ");
+      let paddedMeetTimes = ` ${meetings[i].startTime} - ${meetings[i].endTime}`.padEnd(timeLen, " ");
+      let paddedMeetDays = ` ${meetings[i].days}`.padEnd(daysLen, " ");
+
+      console.log(`║${paddedTitle}║${paddedLocation}║${paddedMeetTimes}║${paddedMeetDays}║▒`);
+    }
   }
+
+  // DEBUG: end cli table
+  console.log(`╚${"═".padEnd(titleLen, "═")}╩${"═".padEnd(locationLen, "═")}╩${"═".padEnd(timeLen, "═")}╩${"═".padEnd(daysLen, "═")}╝▒`);
+  console.log(` ${"▒".repeat(titleLen + locationLen + timeLen + daysLen + 4)}▒`);
+
+  for (let i = 0; i < 4; i++) {
+    console.log("");
+  }
+
+  console.log(JSON.stringify(courseSectionLocations, null, 2));
 });
