@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 
 type Meeting = { location: string, startTime: string, endTime: string, days: string };
 
-const USE_SHORT_API_REQUEST = true;
+const USE_SHORT_API_REQUEST = false;
 
 /**
    * TypeError: fetch failed
@@ -166,7 +166,7 @@ test("Find Sections", async ({ page, request }) => {
 
   let titleLen = Math.max(...courseData.map(c => c.title.length)) + 2;
   let locationLen = 32;
-  let timeLen = 20;
+  let timeLen = 21;
   let daysLen = 16;
 
   // --------------------------------------------
