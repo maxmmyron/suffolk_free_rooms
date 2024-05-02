@@ -1,0 +1,11 @@
+body {
+  font-family: "Lilex", "Courier New", Courier, monospace;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table:has(table) {
+  border: 1px solid black;
+}

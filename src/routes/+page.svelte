@@ -2,6 +2,16 @@
   import type { PageData } from "./$types";
 
   export let data: PageData;
+
+  $: maxTitleLen = Math.max(
+    ...data.courses.map((course) => course.title.length)
+  );
+
+  $: maxSectionLen = Math.max(
+    ...data.courses.flatMap((course) =>
+      course.meetings.map((meeting) => meeting.section.length)
+    )
+  );
 </script>
 
 <input
@@ -35,8 +45,8 @@
 <table>
   <thead>
     <tr>
-      <th style="width: 60ch;">Title</th>
-      <th style="width: 60ch;">Section</th>
+      <th style="width: {maxTitleLen}ch;">Course</th>
+      <th style="width: {maxSectionLen}ch;">Section</th>
       <th style="width: 60ch;">Meeting Time</th>
     </tr>
   </thead>
@@ -60,7 +70,7 @@
 
           <table style="width: 100%;">
             <tr>
-              <td style="width: 60ch;" class="section">
+              <td style="width: {maxSectionLen}ch;" class="section">
                 {meeting}
               </td>
               <td style="width: 60ch;">
