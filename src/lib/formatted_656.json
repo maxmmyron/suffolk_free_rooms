@@ -1,0 +1,7406 @@
+{
+  "Sawyer": {
+    "132": {
+      "P.AD-201-B (51508)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "P.AD-201-C (51509)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CMPSC-511-AE (52302)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WGS-330-A (51660)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJU-340-A (52427)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SBS-110-C (52805)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-110-L (52837)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-201-A (52149)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-202-C (52155)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ACCT-805-AE (51127)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "FIN-419-A (52188)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    },
+    "133": {
+      "SOC-344-AE (52400)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-101-UPW (52492)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-H220-A (52657)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SBS-200-CLAS (52628)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      },
+      "WRI-101-G (52723)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "LAWU-401-BE (51898)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "POLS-120-C (51862)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-H110-C (52878)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "HST-251-A (51656)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ITAL-102-A (52034)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MATH-130-B (52464)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "11:50:00"
+      }
+    },
+    "134": {
+      "PHIL-229-A (52750)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "STATS-240-I (52494)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "10:45:00"
+      },
+      "P.AD-H201-A (51507)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "BLE-321-A (52185)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-128-E (52325)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "10:05:00",
+        "endTime": "10:55:00"
+      },
+      "MKT-322-B (52654)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGOB-725-AE (51248)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MGOB-725-BE (51249)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "POLS-345-A (51866)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGT-H419-B (52863)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-110-M (52840)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SBS-110-N (52842)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CMPSC-F131-B (52308)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "P.AD-827-AE (51302)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "135": {
+      "STATS-240-C (52484)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "COUNS-739-BE (51947)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "WRI-102-M (52648)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-345-C (53390)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ITAL-102-A (52034)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "18:15:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "408": {
+      "CJN-253-A (52353)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "STATS-240-E (52488)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "17:50:00"
+      },
+      "STATS-240-F (52490)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "17:50:00"
+      }
+    },
+    "427": {
+      "BLE-214-AE (52176)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "BLE-214-B (52173)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "BLE-214-C (52177)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-130-A (52580)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-130-AE (52574)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-631-A (51173)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ACCT-202-A (52157)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CMPSC-F265-A (52311)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CMPSC-F265-B (53306)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EC-101-D (52886)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-401-AE (52276)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "PSYCH-114-A (52002)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    },
+    "429": {
+      "MKT-426-A (52741)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "BLE-214-D (52174)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SOC-406-A (52426)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "LAWU-101-A (51884)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-115-A (51796)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ENVS-325-A (51828)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "FIN-311-A (52228)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-315-B (52237)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-411-A (52231)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-814-AE (51150)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "PSYCH-114-C (52004)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PSYCH-333-A (52022)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PSYCH-350-AE (52025)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "508": {
+      "HST-150-AE (51703)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "BLE-316-A (52183)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "STATS-240-GE (52491)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CAS-201-A (52137)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "MKT-818-AE (51274)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ADPR-257-A (51723)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PSYCH-240-BE (53317)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-110-O (52844)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FR-102-A (51699)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-134-A (52512)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "10:05:00",
+        "endTime": "10:55:00"
+      },
+      "P.AD-711-AC (51292)": {
+        "weekDays": [
+          6
+        ],
+        "startTime": "08:30:00",
+        "endTime": "12:30:00"
+      }
+    },
+    "521": {
+      "ISOM-313-A (52555)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJ-709-AE (52451)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "STATS-240-A (52480)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:20:00"
+      },
+      "STATS-240-C (52484)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "17:50:00"
+      },
+      "STATS-240-D (52486)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "17:50:00"
+      },
+      "STATS-240-GE (52491)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "18:30:00",
+        "endTime": "19:20:00"
+      },
+      "STATS-240-H (52493)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "14:50:00"
+      },
+      "STATS-240-I (52494)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "09:00:00",
+        "endTime": "09:50:00"
+      },
+      "STATS-240-K (52497)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "14:50:00"
+      },
+      "STATS-240-L (52502)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "14:50:00"
+      },
+      "STATS-240-ME (52506)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "18:30:00",
+        "endTime": "19:20:00"
+      },
+      "CI-187-A (52388)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "522": {
+      "CMPSC-F120-A (52306)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "STATS-240-JE (52496)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "17:50:00"
+      },
+      "FIN-845-AE (51154)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ISOM-801-BE (53133)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "FIN-H200-AE (52275)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADPR-297-A (51790)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ADPR-297-B (51791)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-3377-A (51902)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ISOM-232-A (52570)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-413-A (52240)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-831-AE (51153)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      }
+    },
+    "523": {
+      "STATS-240-B (52483)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:20:00"
+      },
+      "ISOM-801-AE (51178)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-801-AE2 (51179)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-330-AE (52568)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-230-A (52571)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ADPR-383-A (51906)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-835-A (51190)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-835-A2 (51191)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-323-A (52559)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ISOM-825-AE (51184)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ISOM-825-AE2 (51185)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ISOM-821-AE (51181)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ISOM-821-AE2 (51182)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ISOM-240-A (52569)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ISOM-631-AE (51174)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-316-AE (52557)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "619": {
+      "ADI-849-A (52279)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADG-S207-A (52221)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADI-352-A (52248)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:10:00"
+      },
+      "ADI-S401-B (53262)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      }
+    },
+    "630": {
+      "ADFA-S220-A (52208)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADFA-S272-A (53212)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      }
+    },
+    "631": {
+      "ADG-S312-A (52222)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADG-S807-A (52229)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S202-A (52219)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S354-B (52226)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      }
+    },
+    "634": {
+      "ADG-S202-B (52220)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADG-S354-A (52225)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S360-A (52285)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S202-A (52253)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADI-S842-A (52262)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      }
+    },
+    "635": {
+      "ADG-S340-AE (52223)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "18:30:00",
+        "endTime": "21:10:00"
+      }
+    },
+    "638": {
+      "ADF-S101-A (52189)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S101-UPW (53385)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S102-A (52190)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:10:00"
+      }
+    },
+    "808": {
+      "STATS-240-H (52493)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MATH-128-C (52323)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "FIN-601-A (51141)": {
+        "weekDays": [
+          0,
+          6
+        ],
+        "startTime": "09:00:00",
+        "endTime": "17:00:00"
+      },
+      "ENG-130-B (52746)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ADPR-101-A (51701)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-2277-A (51715)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CJN-105-A (52334)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-898-AE (51287)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "19:40:00",
+        "endTime": "22:10:00"
+      },
+      "PSYCH-H428-A (52028)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-223-A (51882)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJU-233-A (52416)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "FIN-430-A (52272)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SBS-H110-A (52876)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "BLE-324-A (52186)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "P.AD-839-AE (51524)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "821": {
+      "ISOM-900-A (53198)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-201-AE (52433)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MGT-322-A (52121)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-428-AE (52678)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-444-A (52681)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "SBS-100-B (52499)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "MGT-360-B (52107)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MGT-360-H (53123)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MGT-217-A (52108)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MGT-217-B (52112)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGT-217-E (52116)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGT-217-F (52119)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "PSYCH-H321-A (52027)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENG-172-A (52712)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ISOM-390-AE (52968)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "FIN-825-AE (53270)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      }
+    },
+    "908": {
+      "ACCT-430-A (52168)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "WRI-102-K (52646)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "WRI-102-P (52655)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "WRI-102-S (52691)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-860-AE (51283)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-860-BE (51284)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SF-1190-A (51623)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-331-A (52164)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ACCT-801-AE (51124)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      }
+    },
+    "921": {
+      "BLE-215-A (52411)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "BLE-215-AE (52180)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "BLE-215-D (52182)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SIB-429-AE (52544)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-421-AE (52631)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "FIN-417-B (52418)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-200-A (52293)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-200-D (52435)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MATH-128-B (52321)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "10:05:00",
+        "endTime": "10:55:00"
+      },
+      "CMPSC-310-A (52301)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-499-AE (52730)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "FIN-H419-AE (52277)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "POLS-225-A (51903)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "CJU-236-A (52420)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-202-D (52156)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "EC-101-AE (52974)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "FIN-315-A (52239)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-800-AE (51143)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "19:40:00",
+        "endTime": "22:10:00"
+      }
+    },
+    "927": {
+      "BLE-215-B (52109)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "BLE-215-E (52105)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SIB-101-BE (52520)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SIB-101-C (52527)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SIB-321-A (52534)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "HST-233-AE (51706)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-220-A (52727)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-200-B (52333)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CJN-225-A (52348)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENVS-350-A (51831)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-315-A (52684)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "STATS-250-C (52914)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "929": {
+      "ISOM-319-A (52509)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ISOM-201-A (52453)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MGT-322-B (52124)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-210-C (53439)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-H210-A (52685)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "STATS-240-B (52483)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-101-C (52485)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SIB-429-AE (52544)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "FIN-200-C (52438)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "BLE-325-A (52187)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-258-A (51788)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGT-385-A (51330)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJU-134-AE (52452)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "MGT-305-A (52114)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGT-305-B (52117)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "PSYCH-325-A (52020)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "938": {
+      "MATH-165-A (52472)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "STATS-240-A (52480)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "BLE-317-A (52184)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SOC-301-AE (52430)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MGT-217-GE (52125)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CI-115-A (52378)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CJN-152-B (52962)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ADPR-101-B (51704)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-150-A (52148)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CI-H163-AE (52403)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CI-1123-A (52398)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MATH-134-B (52466)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "12:30:00",
+        "endTime": "13:20:00"
+      },
+      "P.AD-839-AE (51524)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "PSYCH-313-A (52018)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PSYCH-334-A (52023)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "1019": {
+      "ADI-S855-A (52264)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADG-S207-B (53125)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADI-352-A (52248)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ADI-352-B (53130)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADI-S202-B (52254)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADI-S305-A (52260)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:10:00"
+      }
+    },
+    "1032": {
+      "ADF-S156-A (52199)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADF-S156-B (52200)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADF-S166-A (52201)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:30:00",
+        "endTime": "16:10:00"
+      },
+      "ADF-S172-A (52203)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADF-S172-C (52205)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:10:00"
+      }
+    },
+    "1034": {
+      "ART-S209-A (52265)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S171-A (52202)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADF-S172-B (52204)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:10:00"
+      },
+      "ADF-S152-C (52196)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADF-S152-D (52197)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      }
+    },
+    "1040": {
+      "ART-S211-A (52267)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ART-S211-B (52268)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "ADF-S102-B (52191)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADF-S102-C (52192)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADF-S102-D (52193)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      }
+    },
+    "1108": {
+      "STATS-240-A (52480)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "P.AD-201-D (51510)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "COUNS-732-AE (51942)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CAS-201-C (52140)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "CAS-201-D (52141)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "HST-103-A (51654)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-208-A (51886)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-438-AE (51932)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-839-AE (51194)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-110-E (52806)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "EC-H102-A (52893)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-121-B (52319)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      }
+    },
+    "1121": {
+      "MATH-166-A (52475)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-285-A (52477)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "14:50:00"
+      },
+      "STATS-240-K (52497)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-220-A (52872)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EDUC-202-A (53213)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "10:00:00",
+        "endTime": "13:30:00"
+      },
+      "CI-119-A (52434)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-325-A (51792)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      },
+      "SBS-110-A (52771)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "SBS-110-KE (52835)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "BLKST-102-A (51895)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "1122": {
+      "MATH-166-B (53374)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "COUNS-739-AE (51945)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "MBA-740-DF (51237)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "16:30:00",
+        "endTime": "19:00:00"
+      },
+      "MBA-740-GE (52935)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "16:30:00",
+        "endTime": "19:00:00"
+      },
+      "MDO-711-AE (52281)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-660-A (53042)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "10:45:00"
+      },
+      "POLS-747-AE (51930)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MGT-341-A (53137)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CMPSC-F132-B (52310)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:20:00"
+      },
+      "PSYCH-741-A (53132)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "13:00:00",
+        "endTime": "15:00:00"
+      }
+    },
+    "1125": {
+      "MKT-210-A (52675)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-210-B (52676)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-220-B (52630)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CAS-201-CLAS (52627)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "ADPR-103-B (51710)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "SBS-110-P (52852)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "HST-382-A (53298)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MATH-104-A (52317)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      }
+    },
+    "1126": {
+      "MATH-166-A (52475)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      },
+      "MATH-166-B (53374)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "10:45:00"
+      },
+      "SBS-HC310-A (53142)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ENG-500-A (52721)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      },
+      "SBS-HC295-A (53141)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CMPSC-F131-A (52307)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "1130": {
+      "THETR-475-A (51921)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "THETR-377-A (51917)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "THETR-359-A (51916)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "THETR-291-A (51915)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "THETR-425-A (51919)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "THETR-437-A (51920)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "A39": {
+      "ADI-306-A (52247)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ADI-HS401-A (52249)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADI-S304-B (52259)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:30:00",
+        "endTime": "16:10:00"
+      },
+      "ADI-S305-B (53129)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:10:00"
+      },
+      "ADI-S401-A (52261)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      }
+    },
+    "A29": {
+      "ADI-306-B (53261)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADI-244-A (52243)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADI-244-BE (52244)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "18:30:00",
+        "endTime": "21:10:00"
+      }
+    },
+    "A19": {
+      "ADG-S822-A (52230)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S842-AE (52233)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "18:30:00",
+        "endTime": "21:10:00"
+      },
+      "ADG-S840-AE (52232)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S844-AE (52234)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "18:30:00",
+        "endTime": "21:10:00"
+      },
+      "ADG-S849-A (52235)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADG-HS345-A (52218)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S345-A (52224)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      }
+    },
+    "B41": {
+      "ADFA-S345-A (52211)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ART-S215-A (52269)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "ADG-S851-A (53319)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADFA-S251-A (52209)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADFA-S410-A (52217)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      }
+    },
+    "B35": {
+      "CI-147-A (52381)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADF-S152-A (52194)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:10:00"
+      },
+      "ADF-S152-B (52195)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      }
+    },
+    "A31": {
+      "ADI-S215-A (52255)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:10:00"
+      },
+      "ADI-S215-B (52257)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADI-S106-A (52250)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "12:10:00"
+      },
+      "ADI-S106-B (52251)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "18:10:00"
+      },
+      "ADI-S304-A (52258)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:30:00",
+        "endTime": "16:10:00"
+      }
+    }
+  },
+  "": {
+    "": {
+      "ADF-S156-A (52199)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S156-B (52200)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "CHIN-102-A (51716)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ISOM-201-B (52456)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ADG-S842-AE (52233)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S166-A (52201)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S312-A (52222)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADFA-S220-A (52208)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S844-AE (52234)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ART-S211-B (52268)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "COUNS-741-BE (51949)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADF-S171-A (52202)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S172-A (52203)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S172-B (52204)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S172-C (52205)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-220-B (52875)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "WRI-101-E (52660)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CJN-3455-A (52355)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MBA-740-AE (51231)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "MBA-740-AF (51232)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "MBA-740-DE (52936)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "MBA-740-DF (51237)": {
+        "weekDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "startTime": null,
+        "endTime": null
+      },
+      "MBA-740-GE (52935)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "MBA-740-GF (52931)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S215-A (52255)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S215-B (52257)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-849-A (52279)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ADI-S855-A (52264)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S849-A (52235)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "MKT-860-AE (51283)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-860-BE (51284)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "EC-H490-A (52903)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EC-H490-B (52904)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-845-AE (51278)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MDO-710-A (52242)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "16:30:00"
+      },
+      "MDO-713-A (52284)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MDO-730-A (52286)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "16:30:00"
+      },
+      "MDO-731-AE (52288)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADI-HS401-A (52249)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADFA-HS372-A (52207)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "POLS-623-AE (51962)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "EC-H450-A (52900)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ADFA-S381-A (52215)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ENG-500-A (52721)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "RAD-342-A (52296)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "07:00:00",
+        "endTime": "16:30:00"
+      },
+      "RAD-344-A (52299)": {
+        "weekDays": [
+          3,
+          5
+        ],
+        "startTime": "07:00:00",
+        "endTime": "16:30:00"
+      },
+      "ART-S215-A (52269)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S102-A (52190)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S102-B (52191)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S102-C (52192)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S102-D (52193)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S152-A (52194)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S152-B (52195)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S152-C (52196)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADF-S152-D (52197)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADFA-S272-A (53212)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADFA-S362-A (52212)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADFA-S371-A (52213)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADFA-S372-A (52214)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S202-B (52220)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S207-A (52221)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S207-B (53125)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S340-AE (52223)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADG-S345-A (52224)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-244-A (52243)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ADI-244-BE (52244)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ADI-352-B (53130)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S106-A (52250)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S106-B (52251)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S202-A (52253)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S202-B (52254)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S304-A (52258)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S304-B (52259)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S305-A (52260)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S305-B (53129)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S401-A (52261)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ADI-S842-A (52262)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "BIO-285-A (52596)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "BIO-333-A (52599)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-800-AE (51143)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "FIN-812-AE (51149)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "FIN-814-AE (51150)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SPAN-102-A (51674)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    }
+  },
+  "Rosalie K. Stahl Bldg": {
+    "1003": {
+      "ADPR-506-A (51970)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ADPR-371-AE (51904)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADPR-781-AE (51905)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADPR-774-AE (51997)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "2100": {
+      "WRI-101-B (52640)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "WRI-101-E (52660)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      },
+      "WRI-102-AA (52751)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "WRI-102-CE (52864)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-102-DD (52808)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "WRI-102-FF (52810)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "WRI-102-Q (52658)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MATH-134-C (52467)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MATH-134-D (52468)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHIL-414-A (52768)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "4036": {
+      "MKT-220-D (53378)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-376-A (52823)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENG-340-A (52843)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-HC290-A (53237)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "18:15:00"
+      },
+      "BIO-274-A (52597)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-344-A (52870)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-399-AE (52856)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "4046": {
+      "MBA-730-BE (51229)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "AMST-101-AE (52963)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "PSYCH-742-A (53218)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CJN-220-A (52347)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "4048": {
+      "CHIN-102-A (51716)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "10:05:00",
+        "endTime": "10:55:00"
+      },
+      "SBS-220-DE (52708)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-102-PP (52848)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-120-A (52809)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-370-A (52838)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "5030": {
+      "STATS-240-B (52483)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "13:45:00"
+      },
+      "STATS-240-F (52490)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "STATS-240-GE (52491)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "18:15:00"
+      },
+      "STATS-240-H (52493)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "WRI-101-D (52656)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CJN-443-A (52358)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENG-388-A (52653)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-775-AE (51992)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-110-CLAS (52871)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "BIO-474-A (52947)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "5035": {
+      "SPAN-290-A (51678)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "COUNS-728-AE (51941)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-102-DE (52869)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-102-W (52698)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-704-AE (51985)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "POLS-660-A (53042)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SPAN-102-B (51675)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SPAN-102-C (51676)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SPAN-301-A (51783)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "5040": {
+      "CHIN-102-A (51716)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      },
+      "STATS-240-L (52502)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "CJ-730-AE (52457)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "COUNS-726-AE (51940)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "CAS-101-B (52132)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "10:45:00"
+      },
+      "WRI-101-AE (52862)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-102-GG (52813)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "WRI-102-KK (52830)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-135-A (52802)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SF-1181-A (51625)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-758-AE (52029)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SOC-433-A (52419)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SPAN-102-A (51674)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "08:50:00"
+      },
+      "SPAN-202-A (51677)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "5045": {
+      "STATS-240-JE (52496)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "18:15:00"
+      },
+      "STATS-240-ME (52506)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "18:15:00"
+      },
+      "CJN-482-A (52362)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-120-A (51627)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "POLS-120-B (51819)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-345-B (51870)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ENG-H158-A (52861)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-877-AE (52359)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-110-G (52814)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "HST-392-A (51713)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "SPAN-102-A (51674)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "09:00:00",
+        "endTime": "09:50:00"
+      },
+      "STATS-H250-B (52913)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "5050": {
+      "P.AD-201-E (51511)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "P.AD-201-F (51512)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-220-C (52725)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-102-BB (52754)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "WRI-102-H (52643)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "WRI-102-HH (52816)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "WRI-102-JJ (52827)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "WRI-102-OO (52847)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "WRI-102-U (52695)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENG-212-A (52717)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-724-A (51900)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-877-AE (52359)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CMPSC-F131-B (52308)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "14:50:00"
+      }
+    },
+    "5055": {
+      "BLE-215-G (53458)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-128-A (52320)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CI-191-AE (52389)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "SBS-104-BE (52922)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-C (52912)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-E (52916)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-I (52888)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-N (53060)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-Q (53522)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-H104-A (53054)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-H104-AE (53065)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-H104-B (53058)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-H104-C (53059)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MATH-130-A (52436)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "PSYCH-226-A (52014)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "5060": {
+      "COUNS-715-AE (51939)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-104-A (52882)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-B (52907)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-D (52883)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-F (52884)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-G (52908)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-H (52918)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-L (53052)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "09:30:00",
+        "endTime": "10:45:00"
+      },
+      "SBS-104-M (53057)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "SBS-104-P (53267)": {
+        "weekDays": [],
+        "startTime": null,
+        "endTime": null
+      },
+      "ACCT-802-AE (51125)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "CJ-686-AE (52454)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MATH-104-A (52317)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      },
+      "TAX-863-AE (51325)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      }
+    },
+    "5065": {
+      "STATS-240-D (52486)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "STATS-240-E (52488)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "ENG-395-A (52824)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "RAD-416-AE (52298)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADPR-4477-A (51967)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJN-105-B (53387)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJU-305-A (52412)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CAS-H201-B (52146)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "10:45:00"
+      },
+      "WGS-H113-A (53043)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-104-L (53052)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": null,
+        "endTime": null
+      },
+      "ACCT-861-AE (51130)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ENG-213-A (52836)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-104-A (52317)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    },
+    "5070": {
+      "P.AD-325-A (51516)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ENG-217-A (52760)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "STATS-240-K (52497)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "COUNS-714-AE (51937)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "COUNS-733-AE (51943)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "CAS-201-B (52139)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "ADPR-103-A (51708)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-437-A (51966)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "LAWU-221-B (53395)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CAS-H201-A (52145)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "SBS-H110-B (52877)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "5075": {
+      "MATH-165-A (52472)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      },
+      "SOC-116-AE (52414)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGT-360-A (52106)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MGT-360-G (53122)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "EDUC-414-AE (52476)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ENG-135-B (52818)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENG-158-A (52711)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "HST-236-A (51657)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "LAWU-221-A (51891)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "LAWU-340-AE (51935)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "LAWU-365-A (51887)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-160-A (53238)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-253-A (51874)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "POLS-306-A (51856)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EC-101-BE (53376)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MATH-000-A (52508)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    },
+    "5120": {
+      "CAS-101-E (53446)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:15:00",
+        "endTime": "14:30:00"
+      },
+      "WRI-102-L (52647)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "WRI-102-LL (52831)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "WRI-102-NN (52846)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "WRI-102-RR (53384)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-717-AE (51987)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADPR-770-AE (51990)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SF-1173-A (51624)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-521-AE (51934)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADPR-705-AE (51986)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "8002": {
+      "PSYCH-721-A (51634)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "10:00:00",
+        "endTime": "12:30:00"
+      },
+      "PSYCH-714-A (53297)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "15:00:00",
+        "endTime": "17:00:00"
+      },
+      "PSYCH-705-A (51631)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "13:00:00",
+        "endTime": "15:30:00"
+      },
+      "PSYCH-713-A (53294)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "09:00:00",
+        "endTime": "11:30:00"
+      },
+      "PSYCH-731-A (51636)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:30:00",
+        "endTime": "09:30:00"
+      },
+      "PSYCH-723-A (53293)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "10:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "8028": {
+      "PSYCH-743-A (51640)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "10:00:00",
+        "endTime": "12:30:00"
+      },
+      "PSYCH-787-A (51671)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:00:00"
+      },
+      "PSYCH-799-A (53271)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "13:45:00",
+        "endTime": "15:45:00"
+      },
+      "PSYCH-718-A (51633)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "09:00:00",
+        "endTime": "11:30:00"
+      },
+      "PSYCH-739-A (51637)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "15:15:00",
+        "endTime": "17:15:00"
+      }
+    },
+    "8065": {
+      "CAS-291-A (53343)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CMPSC-F265-B (53306)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      }
+    },
+    "9010": {
+      "ENG-321-AE (53440)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "17:50:00"
+      }
+    },
+    "9077": {
+      "MATH-166-B (53374)": {
+        "weekDays": [
+          3,
+          5
+        ],
+        "startTime": "12:30:00",
+        "endTime": "13:20:00"
+      },
+      "PSYCH-712-A (51632)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "12:30:00",
+        "endTime": "15:00:00"
+      },
+      "COUNS-735-AE (51944)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "COUNS-741-AE (51948)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-101-C (52642)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "WRI-102-SS (53383)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-877-BE (52410)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-869-A (52341)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-869-B (52346)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CMPSC-F132-A (52309)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      }
+    }
+  },
+  "Samia Academic Center": {
+    "114": {
+      "EC-460-AE (52901)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "PHIL-H127-A (52726)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CI-110-A (52376)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CI-H106-A (52510)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "LAWU-211-A (51816)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ADPR-409-A (51964)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-827-AE (51187)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-827-AE2 (51188)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "POLS-623-AE (51962)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-850-AE (51279)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "MKT-850-BE (51280)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "MBA-715-AE (51224)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "BIO-204-A (52594)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "BIO-285-A (52596)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "10:45:00"
+      },
+      "BIO-333-A (52599)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      }
+    },
+    "115": {
+      "MGT-217-GE (52125)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-210-B (52473)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CMPSC-F375-A (52314)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "RAD-415-A (52292)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MDO-615-A (52238)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CJU-207-A (52395)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CJU-233-B (53373)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJU-H233-A (52965)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CI-1122-A (52397)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-201-B (52150)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-431-A (52169)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EC-102-A (52887)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "EC-102-D (52891)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-808-AE (51145)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "MATH-000-A (52508)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "10:05:00",
+        "endTime": "10:55:00"
+      },
+      "MATH-130-A (52436)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "12:30:00",
+        "endTime": "13:20:00"
+      },
+      "MATH-134-A (52512)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    },
+    "116": {
+      "ISOM-319-B (52511)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-319-F (52529)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "HST-348-A (53250)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ISOM-201-B (52456)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "ISOM-201-C (52459)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-201-D (52462)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ISOM-201-E (52463)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-450-A (52170)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PHIL-423-A (52796)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-845-AE (51195)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-210-A (52469)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CJN-218-A (52343)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MATH-130-B (52464)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MATH-134-B (52466)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    },
+    "214": {
+      "EC-151-AE (52895)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "RS-112-A (52724)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CJN-152-A (52339)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EMBA-740-EX (51138)": {
+        "weekDays": [
+          6
+        ],
+        "startTime": "08:30:00",
+        "endTime": "17:00:00"
+      },
+      "POLS-225-B (53381)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SCI-120-A (53104)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SCI-120-B (53389)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-819-AE (51275)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:00:00"
+      },
+      "MKT-819-BE (51276)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:00:00"
+      },
+      "EMBA-705-EX (51979)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "21:00:00"
+      },
+      "EMBA-711-EX (51980)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "21:00:00"
+      },
+      "EMBA-712-EX (51981)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "21:00:00"
+      },
+      "EMBA-713-EX (51982)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "21:00:00"
+      },
+      "EMBA-709-EX (51978)": {
+        "weekDays": [
+          6
+        ],
+        "startTime": "08:30:00",
+        "endTime": "17:00:00"
+      },
+      "EMBA-716-EX (51983)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "21:00:00"
+      },
+      "MKT-419-B (52641)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHIL-123-D (52718)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHIL-123-E (52722)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PHIL-127-B (52732)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "STATS-250-E (52917)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "215": {
+      "PSYCH-247-A (52017)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-421-AE (52631)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MATH-128-C (52323)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "08:50:00"
+      },
+      "MATH-128-D (52324)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "10:05:00",
+        "endTime": "10:55:00"
+      },
+      "MATH-128-H (52328)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:20:00"
+      },
+      "WRI-101-F (52704)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SOC-221-A (52417)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ISOM-210-AE (52465)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-210-E (52498)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "HST-288-A (51665)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-323-AE (51961)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ADPR-325-A (51792)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-815-AE (51272)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "CMPSC-F265-A (52311)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "EC-102-B (52889)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MKT-317-A (52664)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "216": {
+      "ARH-102-A (51717)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ARH-102-BE (51720)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ARH-309-A (53245)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ARH-312-A (53244)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MATH-128-IE (52329)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CI-106-A (52374)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "WRI-102-Y (52747)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "LAWU-101-B (53416)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ARH-203-AE (53247)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "THETR-160-A (51912)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SBS-H298-A (52873)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-298-A (52686)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ACCT-202-B (52153)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EC-101-A (52880)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHIL-119-B (52687)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    },
+    "217": {
+      "WGS-115-A (51658)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "STATS-240-L (52502)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "STATS-240-ME (52506)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MGT-360-E (52128)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MATH-128-G (52327)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      },
+      "BIO-233-AE (52923)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "CI-151-A (52382)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CI-175-B (53403)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "POLS-276-A (51867)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CJU-433-A (52425)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ISOM-700-A (53258)": {
+        "weekDays": [
+          6
+        ],
+        "startTime": "09:00:00",
+        "endTime": "17:00:00"
+      },
+      "SBS-110-B (52774)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CHEM-111-A (51794)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PSYCH-114-B (52003)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PSYCH-114-DE (52005)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "218": {
+      "PSYCH-336-A (52024)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MATH-128-G (52327)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MATH-128-H (52328)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "WRI-102-R (52659)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ENG-156-A (52821)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "RAD-321-AE (52295)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "POLS-110-A (51813)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "POLS-181-B (51889)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-310-A (51885)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJU-333-A (52399)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CMPSC-F331-A (52312)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "EC-402-A (52897)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "219": {
+      "HST-321-AE (51712)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-102-X (52707)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-201-A (51853)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-201-B (51865)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SF-1188-A (53144)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "HST-H239-A (53049)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CHEM-355-A (51799)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CMPSC-F131-A (52307)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "12:30:00",
+        "endTime": "13:20:00"
+      },
+      "HST-252-B (51923)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:00:00"
+      }
+    },
+    "314": {
+      "STATS-240-JE (52496)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SCI-230-A (51844)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CLAS-AIM-D (52623)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "12:30:00",
+        "endTime": "13:45:00"
+      },
+      "POLS-501-A (51896)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "POLS-778-AE (51936)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "18:30:00",
+        "endTime": "21:00:00"
+      },
+      "EC-103-A (52894)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CI-199-A (52391)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-317-A (52216)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHIL-115-A (52679)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PHIL-119-A (52682)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHIL-123-C (52715)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PHIL-127-CE (52735)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "PHIL-127-D (52736)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "315": {
+      "ACCT-H202-A (52171)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-319-C (52519)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ISOM-440-AE (52566)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SBS-101-B (52478)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-861-AE (51196)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ISOM-861-AE2 (51197)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "MATH-128-E (52325)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHIL-120-A (52700)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-3376-A (51793)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "LAWU-335-A (51883)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PSYCH-240-AE (52015)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CMPSC-F355-A (52313)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-123-A (52839)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "PHIL-119-AE (52683)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "PSYCH-326-A (52021)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "316": {
+      "ISOM-319-E (52524)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SIB-101-F (52525)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SBS-100-X (52505)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      },
+      "MATH-128-F (52326)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ISOM-210-F (52504)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "WGS-335-A (51661)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENG-153-A (52758)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-643-A (52165)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:15:00",
+        "endTime": "15:40:00"
+      },
+      "POLS-443-A (52166)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:15:00",
+        "endTime": "15:40:00"
+      },
+      "CAS-HC225-A (53236)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ACCT-803-AE (51871)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "EC-101-C (52885)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "EC-102-AE (52892)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-317-B (52668)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "317": {
+      "ACCT-320-AE (52158)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "BIO-201-A (52562)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "BIO-201-C (52591)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MATH-128-A (52320)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "08:50:00"
+      },
+      "MATH-128-B (52321)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "09:00:00",
+        "endTime": "09:50:00"
+      },
+      "MATH-128-C (52323)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "09:15:00"
+      },
+      "MATH-128-F (52326)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "MATH-128-IE (52329)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "18:30:00",
+        "endTime": "19:20:00"
+      },
+      "BIO-H201-A (52603)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:30:00"
+      },
+      "CI-173-AE (52384)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "RAD-321-AE (52295)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJN-400-A (52357)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "10:00:00",
+        "endTime": "13:30:00"
+      },
+      "MATH-130-B (52464)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "09:30:00",
+        "endTime": "10:45:00"
+      },
+      "PHIL-211-A (52740)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PHIL-250-AE (52755)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "PHIL-316-A (52759)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "318": {
+      "PSYCH-222-AE (52013)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "THETR-266-A (51914)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-128-A (52320)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "09:00:00",
+        "endTime": "09:50:00"
+      },
+      "MATH-128-D (52324)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MATH-128-IE (52329)": {
+        "weekDays": [
+          2,
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "18:15:00"
+      },
+      "CMPSC-F107-C (52305)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CI-175-A (52385)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGT-780-AE (51259)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJU-204-A (52413)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EC-101-AE (52974)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "18:30:00",
+        "endTime": "21:00:00"
+      },
+      "EC-101-B (52881)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MATH-121-B (52319)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-130-A (52436)": {
+        "weekDays": [
+          1,
+          3,
+          5
+        ],
+        "startTime": "11:10:00",
+        "endTime": "12:00:00"
+      },
+      "PSYCH-241-A (52016)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "PSYCH-314-A (52019)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "319": {
+      "CMPSC-F345-A (53305)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SIB-101-D (52523)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SIB-H429-A (52546)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-128-B (52321)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "MATH-128-G (52327)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "13:45:00"
+      },
+      "CMPSC-F107-B (52304)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CI-114-AE (52377)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CI-157-A (52383)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-845-AE (51278)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ACCT-804-AE (51869)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJN-239-A (52352)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SCI-112-A (51842)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "320": {
+      "MDO-732-A (52289)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJ-681-AE (52450)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "414": {
+      "CJN-101-A (52332)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CJN-480-A (52361)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CJN-112-A (52338)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CJN-212-A (52340)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CJN-H506-A (52372)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJN-H152-AE (52373)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJN-232-A (52349)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJN-216-A (52342)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "513": {
+      "ENVS-111-A (51821)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SCI-171-A (51832)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SCI-171-B (51833)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CHEM-H429-A (52975)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ENVS-401-A (51829)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ENVS-H401-A (51830)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CHEM-411-A (51800)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CHEM-429-A (51801)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHYS-111-A (51834)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHYS-112-A (51835)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "PHYS-112-B (51836)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "PHYS-152-A (51837)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      }
+    },
+    "516": {
+      "PHYS-L111-A (51838)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "PHYS-L112-A (51839)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "PHYS-L112-B (51840)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "SCI-L112-AE (51843)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "18:00:00",
+        "endTime": "20:40:00"
+      }
+    },
+    "517": {
+      "ENVS-L111-A (51824)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "ENVS-L111-B (51825)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "PHYS-L152-A (51841)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      }
+    },
+    "613": {
+      "BIO-L111-A (52606)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L111-B (52607)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L111-C (52608)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      }
+    },
+    "614": {
+      "BIO-L114-A (52609)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L114-B (52610)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L114-C (52611)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      }
+    },
+    "615": {
+      "BIO-L204-A (52612)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L204-B (52613)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L333-A (52617)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L333-B (52618)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      }
+    },
+    "616": {
+      "CHEM-L111-A (51802)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      },
+      "CHEM-L111-B (51804)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      },
+      "CHEM-L112-A (51805)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      },
+      "CHEM-L112-B (51806)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      },
+      "CHEM-L112-C (53380)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      }
+    },
+    "713": {
+      "BIO-L274-A (52614)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L285-A (52615)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "BIO-L285-B (52616)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      }
+    },
+    "721": {
+      "BIO-L474-A (52952)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      }
+    },
+    "724": {
+      "RAD-L415-AE (52300)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:00:00"
+      },
+      "MDO-L615-AE (52291)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:00:00"
+      }
+    },
+    "813": {
+      "CHEM-L212-A (51808)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      },
+      "CHEM-L212-B (51809)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      }
+    },
+    "819": {
+      "SCI-L102-A (51817)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "SCI-L102-B (51818)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:40:00"
+      },
+      "CHEM-L355-A (51810)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      },
+      "CHEM-L411-A (51811)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "18:00:00"
+      }
+    },
+    "B15": {
+      "HST-319-A (51711)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "THETR-187-A (51913)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CAS-101-C (52133)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      }
+    },
+    "B17": {
+      "BLE-215-C (52179)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "STATS-240-I (52494)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SIB-429-B (52541)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MATH-128-F (52326)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:20:00"
+      },
+      "CI-102-AE (52365)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-499-BE (52737)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MKT-429-A (52680)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "CI-193-A (52390)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SCI-102-A (51812)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CI-1121-A (52394)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "HST-272-AE (51709)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "B18": {
+      "STATS-240-C (52484)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "STATS-240-D (52486)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "STATS-240-E (52488)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "STATS-240-F (52490)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SIB-101-AE (52526)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SIB-419-A (52540)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-220-B (52875)": {
+        "weekDays": [
+          1,
+          3
+        ],
+        "startTime": "15:30:00",
+        "endTime": "16:45:00"
+      },
+      "ISOM-210-D (52487)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ADPR-285-A (51789)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-827-AE (51187)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ISOM-827-AE2 (51188)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ENG-221-A (52652)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "BIO-111-A (52556)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "BIO-114-A (52558)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CHEM-112-A (51795)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "STATS-250-D (52915)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "417K": {
+      "CJN-483-AE (52363)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJN-357-AE (52356)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJN-2355-A (52350)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "CJN-2355-B (52351)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "CJN-3455-A (52355)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:45:00"
+      },
+      "CJN-4455-A (52360)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "B16": {
+      "ARH-101-A (51714)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ARH-101-BE (53222)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SIB-101-B (52528)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SIB-101-G (52521)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SIB-429-D (52531)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SIB-429-E (52545)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "POLS-110-B (51820)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-438-AE (51932)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CI-183-AE (52386)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "CHEM-212-A (51798)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SOC-214-A (52396)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "18:00:00"
+      }
+    }
+  },
+  "Sargent Hall": {
+    "255": {
+      "COUNS-741-BE (51949)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MBA-740-AE (51231)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "16:30:00",
+        "endTime": "19:00:00"
+      },
+      "MBA-740-AF (51232)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "16:30:00",
+        "endTime": "19:00:00"
+      },
+      "P.AD-862-AC (51310)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "08:30:00",
+        "endTime": "17:30:00"
+      },
+      "CLAS-AIM-B (52621)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      },
+      "CLAS-AIM-C (52622)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "12:30:00",
+        "endTime": "13:45:00"
+      },
+      "CLAS-AIM-E (52624)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "15:15:00"
+      },
+      "FIN-810-AE (51147)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "265": {
+      "MKT-442-A (52669)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "EC-490-B (52905)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MBA-740-AE (51231)": {
+        "weekDays": [
+          6
+        ],
+        "startTime": "10:00:00",
+        "endTime": "12:30:00"
+      },
+      "MBA-740-AF (51232)": {
+        "weekDays": [
+          6
+        ],
+        "startTime": "10:00:00",
+        "endTime": "12:30:00"
+      },
+      "LAWU-260-A (51872)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "LAWU-330-A (51880)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "LAWU-401-AE (51965)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CJN-302-A (52354)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-311-B (52266)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-419-B (52273)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-432-A (52256)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-882-AE (51155)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MKT-419-A (52633)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "365": {
+      "PSYCH-428-A (52026)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "FIN-417-A (52439)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "EC-490-A (52902)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MBA-740-DE (52936)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "16:30:00",
+        "endTime": "19:30:00"
+      },
+      "LAWU-325-A (51879)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "LAWU-201-B (51864)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ISOM-837-AE (51192)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "ISOM-837-AE2 (51193)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "POLS-441-A (51892)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:15:00",
+        "endTime": "15:40:00"
+      },
+      "POLS-641-A (52160)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:15:00",
+        "endTime": "15:40:00"
+      },
+      "POLS-642-A (52162)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:15:00",
+        "endTime": "15:40:00"
+      },
+      "POLS-442-A (52163)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "13:15:00",
+        "endTime": "15:40:00"
+      },
+      "MBA-715-AE (51224)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "LAWU-338-A (51890)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-812-AE (51149)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "FIN-818-AE (51151)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    },
+    "5220": {
+      "LAWU-401-A (51888)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "LAWU-201-A (51858)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-509-A (51881)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "P.AD-332-AE (51339)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:00:00"
+      },
+      "MKT-360-A (52677)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ACCT-321-A (52159)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ACCT-322-A (52161)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ACCT-415-AE (52167)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "FIN-820-AE (51152)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MGT-419-A (51331)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "PHIL-318-A (52762)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "5250": {
+      "EC-450-A (52899)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "ISOM-H319-D (52522)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "FIN-475-A (52236)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "HLTHIB-870-AE (52336)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "16:30:00",
+        "endTime": "19:00:00"
+      },
+      "MKT-322-A (52690)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "EC-432-A (52898)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MBA-740-GE (52935)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "16:30:00",
+        "endTime": "19:00:00"
+      },
+      "CLAS-AIM-A (52620)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "12:15:00"
+      },
+      "POLS-359-A (51855)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    }
+  },
+  "1 Beacon": {
+    "101": {
+      "ENT-319-A (52582)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "P.AD-201-G (51513)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SBS-220-C (52702)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MGT-217-C (53243)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MKT-H220-A (52688)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENT-367-A (52592)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGOB-835-AE (51253)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "MGOB-835-BE (51254)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "CI-H112-A (52402)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "POLS-778-AE (51936)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "20:00:00",
+        "endTime": "22:30:00"
+      },
+      "SBS-H298-B (52874)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "SBS-298-B (53424)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MGT-313-A (52123)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "102": {
+      "SBS-HC510-B (53318)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      }
+    },
+    "103": {
+      "ENT-419-A (52590)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MGT-301-B (53124)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "SIB-550-TC3 (52550)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "14:00:00"
+      },
+      "ENT-354-A (52589)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "MGT-360-D (52120)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENT-201-A (52586)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-163-A (52841)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENT-317-A (52587)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "SBS-110-F (52812)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "SBS-110-I (52828)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "EC-312-A (52896)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      }
+    },
+    "104": {
+      "SBS-101-D (52489)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "MGT-360-E (52128)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "WRI-102-MM (52845)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENT-336-A (52584)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENG-130-A (52651)": {
+        "weekDays": [
+          3
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "ENG-130-C (53309)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "ENG-141-A (52719)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "14:00:00",
+        "endTime": "16:30:00"
+      },
+      "LAWU-H201-A (51894)": {
+        "weekDays": [
+          5
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENT-399-A (52585)": {
+        "weekDays": [
+          4
+        ],
+        "startTime": "11:00:00",
+        "endTime": "13:30:00"
+      },
+      "ENT-316-A (52583)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "08:00:00",
+        "endTime": "10:30:00"
+      },
+      "POLS-330-A (53112)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      },
+      "POLS-630-A (53113)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    }
+  },
+  "MASS GENERAL HSPTL": {
+    "MGH": {
+      "RAD-475-AE (52297)": {
+        "weekDays": [
+          1
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    }
+  },
+  "OFF": {
+    "CAMP": {
+      "EMBA-740-EX (51138)": {
+        "weekDays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "startTime": null,
+        "endTime": null
+      }
+    }
+  },
+  "New England Aquarium": {
+    "AQM": {
+      "BIO-357-AE (52600)": {
+        "weekDays": [
+          2
+        ],
+        "startTime": "17:00:00",
+        "endTime": "19:30:00"
+      }
+    }
+  }
+}
