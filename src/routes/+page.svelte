@@ -1,6 +1,4 @@
 <script lang="ts">
-  import type { PageData } from "./$types";
-
   export let data: {
     [building: string]: {
       [room: string]: {
@@ -26,7 +24,7 @@
     for (const [building, rooms] of Object.entries(data)) {
       for (const [room, sections] of Object.entries(rooms)) {
         // if any section collides with our timestamp, then the room is not available
-        let hasNoCollisions = Object.values(sections).every((secData) => {
+        const hasNoCollisions = Object.values(sections).every((secData) => {
           const localeStr = date.toLocaleDateString();
 
           const start = new Date(localeStr + " " + secData.startTime).getTime();
@@ -52,13 +50,15 @@
    *
    * @throws {Error} if the room is not found
    * @throws {Error} if the room is not available at the given time
+   *
+   * TODO: could use some dirty memoization to compare input timestamp with last known timestamp ranges
    */
   const getRoomDuration = (
     building: string,
     room: string,
     timestamp: number
   ): [number, number] => {
-    let sections = data[building][room];
+    const sections = data[building][room];
     if (!sections) {
       throw new Error(`Room ${building} ${room} not found`);
     }
