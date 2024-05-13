@@ -13,6 +13,11 @@
 
   let date = new Date();
 
+  let occupiedKey: [string, string];
+
+  const getRelTime = (time: string) =>
+    new Date(`${date.toLocaleDateString()} ${time}`).getTime();
+
   /**
    * Returns all free rooms for a given timestamp as a list of tuples (building, room)
    *
@@ -67,11 +72,7 @@
       throw new Error(`Room ${building} ${room} not found`);
     }
 
-    const localeStr = date.toLocaleDateString();
     const day = new Date(timestamp).getDay();
-
-    const getRelTime = (time: string) =>
-      new Date(`${localeStr} ${time}`).getTime();
 
     // filter out invalid sections, then sort (assume no two classes overlap)
     sections = sections
@@ -105,6 +106,44 @@
     // if we reach here, no valid time; throw an error! something must've gone wrong lol
     throw Error(`no time for room ${building} ${room}`);
   };
+
+  /**
+   * Returns an array of start/end timestamp tuples, each of which represents
+   * a period that the given room is *not* available on the timestamp
+   *
+   * @param building building name
+   * @param room room number
+   * @param timestamp day to check against
+   *
+   * @throws {Error} if the room is not found
+   */
+  const getOccupiedTimes = (
+    building: string,
+    room: string,
+    timestamp: number
+  ): [number, number][] => {
+    let sections = Object.values(data[building][room]);
+    if (!sections) {
+      throw new Error(`Room ${building} ${room} not found`);
+    }
+
+    const day = new Date(timestamp).getDay();
+
+    // filter out invalid sections, then sort (assume no two classes overlap)
+    sections = sections
+      .filter((section) => section.weekDays.includes(day))
+      .toSorted((a, b) => getRelTime(a.startTime) - getRelTime(b.startTime));
+
+    // room is free for full day
+    if (sections.length === 0) {
+      return [];
+    }
+
+    return sections.map((section) => [
+      getRelTime(section.startTime),
+      getRelTime(section.endTime),
+    ]);
+  };
 </script>
 
 <div class="flex gap-2">
@@ -116,6 +155,19 @@
   />
 </div>
 
+{#if occupiedKey}
+  {@const occupiedTimes = getOccupiedTimes(
+    occupiedKey[0],
+    occupiedKey[1],
+    date.getTime()
+  )}
+  {#key occupiedKey}
+    {#each occupiedTimes as occupiedTime}
+      <p>from {occupiedTime[0]} to {occupiedTime[1]}</p>
+    {/each}
+  {/key}
+{/if}
+
 <div class="outer">
   <!-- all courses -->
   <main class="grid">
@@ -123,7 +175,12 @@
       <p>{building}</p>
       <div class="grid">
         {#each Object.entries(rooms) as [room, sections]}
-          <p>{room}</p>
+          <div class="grid-leaf">
+            <p>{room}</p>
+            <button on:click={(e) => (occupiedKey = [building, room])}>
+              occupied times
+            </button>
+          </div>
           <div class="grid">
             {#each Object.entries(sections) as [section, secData]}
               <p>{section}</p>
@@ -169,6 +226,12 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: min-content 1fr;
+  }
+
+  .grid-leaf {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   p {
