@@ -1,87 +1,135 @@
 <script lang="ts">
   import type { PageData } from "./$types";
 
-  export let data: PageData;
+  export let data: {
+    [building: string]: {
+      [room: string]: {
+        [section: string]: {
+          startTime: string;
+          endTime: string;
+          weekDays: number[];
+        };
+      };
+    };
+  };
 
-  $: maxTitleLen = Math.max(
-    ...data.courses.map((course) => course.title.length)
-  );
+  let date = new Date();
 
-  $: maxSectionLen = Math.max(
-    ...data.courses.flatMap((course) =>
-      course.meetings.map((meeting) => meeting.section.length)
-    )
-  );
+  /**
+   * Returns a list of available rooms at a given timestamp
+   *
+   * @param timestamp - the timestamp to check against
+   */
+  const getAvailableRooms = (timestamp: number): string[] => {
+    let availableRooms = [];
+
+    for (const [building, rooms] of Object.entries(data)) {
+      for (const [room, sections] of Object.entries(rooms)) {
+        // if any section collides with our timestamp, then the room is not available
+        let hasNoCollisions = Object.values(sections).every((secData) => {
+          const localeStr = date.toLocaleDateString();
+
+          const start = new Date(localeStr + " " + secData.startTime).getTime();
+          const end = new Date(localeStr + " " + secData.endTime).getTime();
+
+          if (timestamp >= start && timestamp <= end) return false;
+
+          return true;
+        });
+
+        if (hasNoCollisions) availableRooms.push(`${building} ${room}`);
+      }
+    }
+
+    return availableRooms;
+  };
+
+  /**
+   * Returns the start and end timestamps of a given room's availability on a date at a time
+   * @param building - the building name
+   * @param room - the room code
+   * @param timestamp - the timestamp to check.
+   *
+   * @throws {Error} if the room is not found
+   * @throws {Error} if the room is not available at the given time
+   */
+  const getRoomDuration = (
+    building: string,
+    room: string,
+    timestamp: number
+  ): [number, number] => {
+    let sections = data[building][room];
+    if (!sections) {
+      throw new Error(`Room ${building} ${room} not found`);
+    }
+
+    throw new Error("unimplemented");
+  };
 </script>
 
-<input
-  type="text"
-  placeholder="Search..."
-  on:input={(e) => {
-    const search = e.currentTarget.value.toLowerCase();
-    /**
-     * @type {NodeListOf<HTMLTableRowElement>}
-     */
-    const courses = document.querySelectorAll(".course");
+<div class="flex gap-2">
+  <input
+    type="datetime-local"
+    on:input={(e) => {
+      date = new Date(e.currentTarget.value);
+    }}
+  />
+</div>
 
-    courses.forEach((course) => {
-      const title =
-        course.querySelector("td:first-child")?.textContent?.toLowerCase() ??
-        "";
-      const section =
-        course.querySelector(".section")?.textContent?.toLowerCase() ?? "";
-
-      if (title.includes(search) || section.includes(search)) {
-        // @ts-ignore
-        course.style.display = "";
-      } else {
-        // @ts-ignore
-        course.style.display = "none";
-      }
-    });
-  }}
-/>
-
-<table>
-  <thead>
-    <tr>
-      <th style="width: {maxTitleLen}ch;">Course</th>
-      <th style="width: {maxSectionLen}ch;">Section</th>
-      <th style="width: 60ch;">Meeting Time</th>
-    </tr>
-  </thead>
-  {#each data.courses as course}
-    {@const meetings = new Set(course.meetings.map((m) => m.section))}
-    <tr style="border-top: 1px solid black;" class="course">
-      <td>{course.title}</td>
-      <td colspan="2">
-        {#each meetings as meeting}
-          {@const times = course.meetings
-            .filter((m) => m.section === meeting)
-            .map((m) => [m.startTime, m.endTime])}
-
-          {@const locs = course.meetings
-            .filter((m) => m.section === meeting)
-            .map((m) => m.location)}
-
-          {@const days = course.meetings
-            .filter((m) => m.section === meeting)
-            .map((m) => m.days)}
-
-          <table style="width: 100%;">
-            <tr>
-              <td style="width: {maxSectionLen}ch;" class="section">
-                {meeting}
-              </td>
-              <td style="width: 60ch;">
-                {#each times as [startTime, endTime], i}
-                  <p>{days[i]}: {startTime} - {endTime} @ {locs[i]}</p>
-                {/each}
-              </td>
-            </tr>
-          </table>
+<div class="outer">
+  <!-- all courses -->
+  <main class="grid">
+    {#each Object.entries(data) as [building, rooms]}
+      <p>{building}</p>
+      <div class="grid">
+        {#each Object.entries(rooms) as [room, sections]}
+          <p>{room}</p>
+          <div class="grid">
+            {#each Object.entries(sections) as [section, secData]}
+              <p>{section}</p>
+              <div>
+                <p>START: {secData.startTime}</p>
+                <p>END: {secData.endTime}</p>
+                <p>DAYS: {secData.weekDays.join(",")}</p>
+              </div>
+            {/each}
+          </div>
         {/each}
-      </td>
-    </tr>
-  {/each}
-</table>
+      </div>
+    {/each}
+  </main>
+
+  <!-- available -->
+  <aside>
+    {#if date}
+      <h2>Available Rooms</h2>
+      <ul>
+        {#each getAvailableRooms(date.getTime()) as room}
+          <li>{room}</li>
+        {/each}
+      </ul>
+    {:else}
+      <p>Select a date to see available rooms</p>
+    {/if}
+  </aside>
+</div>
+
+<style>
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: min-content 1fr;
+  }
+
+  p {
+    text-wrap: nowrap;
+  }
+
+  .outer {
+    display: flex;
+  }
+
+  .outer > * {
+    width: 50%;
+  }
+</style>

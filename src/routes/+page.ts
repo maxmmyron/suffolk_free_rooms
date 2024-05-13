@@ -1,8 +1,7 @@
 import type { PageLoad } from "./$types";
 
 export const load: PageLoad = async () => {
-  let courses = await import("$lib/coruse_meetings.json");
-  return {
-    courses: courses.default,
-  };
+  let buildings = await import("$lib/formatted_656.json");
+  let data = buildings.default;
+  return data;
 };
