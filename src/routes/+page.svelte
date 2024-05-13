@@ -14,16 +14,17 @@
   let date = new Date();
 
   /**
-   * Returns a list of available rooms at a given timestamp
+   * Returns all free rooms for a given timestamp as a list of tuples (building, room)
    *
    * @param timestamp - the timestamp to check against
    */
-  const getAvailableRooms = (timestamp: number): string[] => {
-    let availableRooms = [];
+  const getAvailableRooms = (timestamp: number): [string, string][] => {
+    let availableRooms: [string, string][] = [];
 
     for (const [building, rooms] of Object.entries(data)) {
       for (const [room, sections] of Object.entries(rooms)) {
-        // if any section collides with our timestamp, then the room is not available
+        // if any section collides with our timestamp, then the room is not
+        // available
         const hasNoCollisions = Object.values(sections).every((secData) => {
           const localeStr = date.toLocaleDateString();
 
@@ -35,7 +36,7 @@
           return true;
         });
 
-        if (hasNoCollisions) availableRooms.push(`${building} ${room}`);
+        if (hasNoCollisions) availableRooms.push([building, room]);
       }
     }
 
@@ -43,7 +44,9 @@
   };
 
   /**
-   * Returns the start and end timestamps of a given room's availability on a date at a time
+   * Returns the start and end timestamps of a given room's availability on a
+   * date at a time.
+   *
    * @param building - the building name
    * @param room - the room code
    * @param timestamp - the timestamp to check.
@@ -51,19 +54,56 @@
    * @throws {Error} if the room is not found
    * @throws {Error} if the room is not available at the given time
    *
-   * TODO: could use some dirty memoization to compare input timestamp with last known timestamp ranges
+   * TODO: could use some dirty memoization to compare input timestamp
+   * with last known timestamp ranges
    */
   const getRoomDuration = (
     building: string,
     room: string,
     timestamp: number
   ): [number, number] => {
-    const sections = data[building][room];
+    let sections = Object.values(data[building][room]);
     if (!sections) {
       throw new Error(`Room ${building} ${room} not found`);
     }
 
-    throw new Error("unimplemented");
+    const localeStr = date.toLocaleDateString();
+    const day = new Date(timestamp).getDay();
+
+    const getRelTime = (time: string) =>
+      new Date(`${localeStr} ${time}`).getTime();
+
+    // filter out invalid sections, then sort (assume no two classes overlap)
+    sections = sections
+      .filter((section) => section.weekDays.includes(day))
+      .toSorted((a, b) => getRelTime(a.startTime) - getRelTime(b.startTime));
+
+    // break if class is free for day
+    if (sections.length === 0) {
+      return [getRelTime("00:00:00"), getRelTime("23:59:59")];
+    }
+
+    // break if timestamp before first class
+    if (timestamp < getRelTime(sections[0].startTime)) {
+      return [getRelTime("00:00:00"), getRelTime(sections[0].startTime)];
+    }
+
+    for (let i = 0; i < sections.length; i++) {
+      const emptyStart = getRelTime(sections[i].endTime);
+
+      if (timestamp > emptyStart) {
+        // break if timestamp is after last class ends
+        if (i === sections.length - 1) {
+          return [emptyStart, getRelTime("23:35:59")];
+        }
+
+        // otherwise, return period between two classes
+        return [emptyStart, getRelTime(sections[i + 1].startTime)];
+      }
+    }
+
+    // if we reach here, no valid time; throw an error! something must've gone wrong lol
+    throw Error(`no time for room ${building} ${room}`);
   };
 </script>
 
@@ -104,8 +144,18 @@
     {#if date}
       <h2>Available Rooms</h2>
       <ul>
-        {#each getAvailableRooms(date.getTime()) as room}
-          <li>{room}</li>
+        {#each getAvailableRooms(date.getTime()) as [building, room]}
+          {@const [startEmpty, endEmpty] = getRoomDuration(
+            building,
+            room,
+            date.getTime()
+          )}
+          <li>
+            {building}
+            {room} ({new Date(startEmpty).toLocaleTimeString()} - {new Date(
+              endEmpty
+            ).toLocaleTimeString()})
+          </li>
         {/each}
       </ul>
     {:else}
