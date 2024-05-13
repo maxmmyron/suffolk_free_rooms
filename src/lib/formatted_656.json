@@ -915,21 +915,6 @@
         ],
         "startTime": "09:30:00",
         "endTime": "12:10:00"
-      },
-      "ADG-S807-A (52229)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S202-A (52219)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S354-B (52226)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
       }
     },
     "634": {
@@ -940,16 +925,6 @@
         ],
         "startTime": "09:30:00",
         "endTime": "12:10:00"
-      },
-      "ADG-S354-A (52225)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S360-A (52285)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
       },
       "ADI-S202-A (52253)": {
         "weekDays": [
@@ -979,16 +954,6 @@
       }
     },
     "638": {
-      "ADF-S101-A (52189)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S101-UPW (53385)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
       "ADF-S102-A (52190)": {
         "weekDays": [
           1,
@@ -1811,11 +1776,6 @@
       }
     },
     "1034": {
-      "ART-S209-A (52265)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
       "ADF-S171-A (52202)": {
         "weekDays": [
           1,
@@ -1850,11 +1810,6 @@
       }
     },
     "1040": {
-      "ART-S211-A (52267)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
       "ART-S211-B (52268)": {
         "weekDays": [
           2
@@ -2335,22 +2290,12 @@
       }
     },
     "A19": {
-      "ADG-S822-A (52230)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
       "ADG-S842-AE (52233)": {
         "weekDays": [
           4
         ],
         "startTime": "18:30:00",
         "endTime": "21:10:00"
-      },
-      "ADG-S840-AE (52232)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
       },
       "ADG-S844-AE (52234)": {
         "weekDays": [
@@ -2367,11 +2312,6 @@
         "startTime": "09:30:00",
         "endTime": "12:10:00"
       },
-      "ADG-HS345-A (52218)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
       "ADG-S345-A (52224)": {
         "weekDays": [
           2,
@@ -2382,32 +2322,12 @@
       }
     },
     "B41": {
-      "ADFA-S345-A (52211)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
       "ART-S215-A (52269)": {
         "weekDays": [
           4
         ],
         "startTime": "14:00:00",
         "endTime": "15:15:00"
-      },
-      "ADG-S851-A (53319)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADFA-S251-A (52209)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADFA-S410-A (52217)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
       }
     },
     "B35": {
@@ -2474,496 +2394,6 @@
         ],
         "startTime": "13:30:00",
         "endTime": "16:10:00"
-      }
-    }
-  },
-  "": {
-    "": {
-      "ADF-S156-A (52199)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S156-B (52200)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "CHIN-102-A (51716)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": "08:00:00",
-        "endTime": "10:30:00"
-      },
-      "ISOM-201-B (52456)": {
-        "weekDays": [
-          4
-        ],
-        "startTime": "11:00:00",
-        "endTime": "13:30:00"
-      },
-      "ADG-S842-AE (52233)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S166-A (52201)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S312-A (52222)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADFA-S220-A (52208)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S844-AE (52234)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ART-S211-B (52268)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "COUNS-741-BE (51949)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "ADF-S171-A (52202)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S172-A (52203)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S172-B (52204)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S172-C (52205)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-220-B (52875)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": "11:00:00",
-        "endTime": "13:30:00"
-      },
-      "WRI-101-E (52660)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "11:00:00",
-        "endTime": "13:30:00"
-      },
-      "CJN-3455-A (52355)": {
-        "weekDays": [
-          4
-        ],
-        "startTime": "14:00:00",
-        "endTime": "16:30:00"
-      },
-      "MBA-740-AE (51231)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "MBA-740-AF (51232)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "MBA-740-DE (52936)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "MBA-740-DF (51237)": {
-        "weekDays": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "startTime": null,
-        "endTime": null
-      },
-      "MBA-740-GE (52935)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "MBA-740-GF (52931)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S215-A (52255)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S215-B (52257)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-849-A (52279)": {
-        "weekDays": [
-          3
-        ],
-        "startTime": "11:00:00",
-        "endTime": "13:30:00"
-      },
-      "ADI-S855-A (52264)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S849-A (52235)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "MKT-860-AE (51283)": {
-        "weekDays": [
-          4
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "MKT-860-BE (51284)": {
-        "weekDays": [
-          4
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "EC-H490-A (52903)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": "11:00:00",
-        "endTime": "13:30:00"
-      },
-      "EC-H490-B (52904)": {
-        "weekDays": [
-          4
-        ],
-        "startTime": "11:00:00",
-        "endTime": "13:30:00"
-      },
-      "MKT-845-AE (51278)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "MDO-710-A (52242)": {
-        "weekDays": [
-          2,
-          4
-        ],
-        "startTime": "08:00:00",
-        "endTime": "16:30:00"
-      },
-      "MDO-713-A (52284)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "MDO-730-A (52286)": {
-        "weekDays": [
-          1,
-          3,
-          5
-        ],
-        "startTime": "08:00:00",
-        "endTime": "16:30:00"
-      },
-      "MDO-731-AE (52288)": {
-        "weekDays": [
-          4
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "ADI-HS401-A (52249)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADFA-HS372-A (52207)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "POLS-623-AE (51962)": {
-        "weekDays": [
-          4
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "EC-H450-A (52900)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": "08:00:00",
-        "endTime": "10:30:00"
-      },
-      "ADFA-S381-A (52215)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ENG-500-A (52721)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "14:00:00",
-        "endTime": "16:30:00"
-      },
-      "RAD-342-A (52296)": {
-        "weekDays": [
-          2,
-          4
-        ],
-        "startTime": "07:00:00",
-        "endTime": "16:30:00"
-      },
-      "RAD-344-A (52299)": {
-        "weekDays": [
-          3,
-          5
-        ],
-        "startTime": "07:00:00",
-        "endTime": "16:30:00"
-      },
-      "ART-S215-A (52269)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S102-A (52190)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S102-B (52191)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S102-C (52192)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S102-D (52193)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S152-A (52194)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S152-B (52195)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S152-C (52196)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADF-S152-D (52197)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADFA-S272-A (53212)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADFA-S362-A (52212)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADFA-S371-A (52213)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADFA-S372-A (52214)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S202-B (52220)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S207-A (52221)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S207-B (53125)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S340-AE (52223)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADG-S345-A (52224)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-244-A (52243)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": "08:00:00",
-        "endTime": "10:30:00"
-      },
-      "ADI-244-BE (52244)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "20:00:00",
-        "endTime": "22:30:00"
-      },
-      "ADI-352-B (53130)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S106-A (52250)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S106-B (52251)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S202-A (52253)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S202-B (52254)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S304-A (52258)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S304-B (52259)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S305-A (52260)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S305-B (53129)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S401-A (52261)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "ADI-S842-A (52262)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "BIO-285-A (52596)": {
-        "weekDays": [
-          3
-        ],
-        "startTime": "14:00:00",
-        "endTime": "16:30:00"
-      },
-      "BIO-333-A (52599)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "14:00:00",
-        "endTime": "16:30:00"
-      },
-      "FIN-800-AE (51143)": {
-        "weekDays": [
-          3
-        ],
-        "startTime": "20:00:00",
-        "endTime": "22:30:00"
-      },
-      "FIN-812-AE (51149)": {
-        "weekDays": [
-          3
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "FIN-814-AE (51150)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "17:00:00",
-        "endTime": "19:30:00"
-      },
-      "SPAN-102-A (51674)": {
-        "weekDays": [
-          1
-        ],
-        "startTime": "08:00:00",
-        "endTime": "10:30:00"
       }
     }
   },
@@ -3639,33 +3069,6 @@
         "startTime": "20:00:00",
         "endTime": "22:30:00"
       },
-      "SBS-104-BE (52922)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-C (52912)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-E (52916)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-I (52888)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-N (53060)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
       "SBS-104-Q (53522)": {
         "weekDays": [
           3
@@ -3724,40 +3127,6 @@
         "startTime": "17:00:00",
         "endTime": "19:30:00"
       },
-      "SBS-104-A (52882)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-B (52907)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-D (52883)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-F (52884)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-G (52908)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-H (52918)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
       "SBS-104-L (53052)": {
         "weekDays": [
           1,
@@ -3765,16 +3134,6 @@
         ],
         "startTime": "09:30:00",
         "endTime": "10:45:00"
-      },
-      "SBS-104-M (53057)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
-      },
-      "SBS-104-P (53267)": {
-        "weekDays": [],
-        "startTime": null,
-        "endTime": null
       },
       "ACCT-802-AE (51125)": {
         "weekDays": [
@@ -3870,13 +3229,6 @@
         ],
         "startTime": "11:00:00",
         "endTime": "13:30:00"
-      },
-      "SBS-104-L (53052)": {
-        "weekDays": [
-          2
-        ],
-        "startTime": null,
-        "endTime": null
       },
       "ACCT-861-AE (51130)": {
         "weekDays": [
@@ -7372,23 +6724,6 @@
         ],
         "startTime": "17:00:00",
         "endTime": "19:30:00"
-      }
-    }
-  },
-  "OFF": {
-    "CAMP": {
-      "EMBA-740-EX (51138)": {
-        "weekDays": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "startTime": null,
-        "endTime": null
       }
     }
   },
