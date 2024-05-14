@@ -12,8 +12,11 @@
   };
 
   let date = new Date();
+  $: time = date.getTime();
 
   let occupiedKey: [string, string];
+
+  $: availableRooms = getAvailableRooms(time);
 
   const getRelTime = (time: string) =>
     new Date(`${date.toLocaleDateString()} ${time}`).getTime();
@@ -30,18 +33,13 @@
       for (const [room, sections] of Object.entries(rooms)) {
         // if any section collides with our timestamp, then the room is not
         // available
-        const hasNoCollisions = Object.values(sections).every((secData) => {
-          const localeStr = date.toLocaleDateString();
+        const hasCollision = Object.values(sections).some(
+          ({ startTime, endTime }) =>
+            timestamp >= getRelTime(startTime) &&
+            timestamp <= getRelTime(endTime)
+        );
 
-          const start = new Date(localeStr + " " + secData.startTime).getTime();
-          const end = new Date(localeStr + " " + secData.endTime).getTime();
-
-          if (timestamp >= start && timestamp <= end) return false;
-
-          return true;
-        });
-
-        if (hasNoCollisions) availableRooms.push([building, room]);
+        if (!hasCollision) availableRooms.push([building, room]);
       }
     }
 
@@ -79,8 +77,11 @@
       .filter((section) => section.weekDays.includes(day))
       .toSorted((a, b) => getRelTime(a.startTime) - getRelTime(b.startTime));
 
+    console.log(`${building} ${room} ${JSON.stringify(sections)}`);
+
     // break if class is free for day
     if (sections.length === 0) {
+      console.log(`ret early; ${building} ${room}`);
       return [getRelTime("00:00:00"), getRelTime("23:59:59")];
     }
 
@@ -95,7 +96,8 @@
       if (timestamp > emptyStart) {
         // break if timestamp is after last class ends
         if (i === sections.length - 1) {
-          return [emptyStart, getRelTime("23:35:59")];
+          console.log(building, room);
+          return [emptyStart, getRelTime("23:59:59")];
         }
 
         // otherwise, return period between two classes
@@ -168,58 +170,26 @@
   {/key}
 {/if}
 
-<div class="outer">
-  <!-- all courses -->
-  <main class="grid">
-    {#each Object.entries(data) as [building, rooms]}
-      <p>{building}</p>
-      <div class="grid">
-        {#each Object.entries(rooms) as [room, sections]}
-          <div class="grid-leaf">
-            <p>{room}</p>
-            <button on:click={(e) => (occupiedKey = [building, room])}>
-              occupied times
-            </button>
-          </div>
-          <div class="grid">
-            {#each Object.entries(sections) as [section, secData]}
-              <p>{section}</p>
-              <div>
-                <p>START: {secData.startTime}</p>
-                <p>END: {secData.endTime}</p>
-                <p>DAYS: {secData.weekDays.join(",")}</p>
-              </div>
-            {/each}
-          </div>
-        {/each}
-      </div>
-    {/each}
-  </main>
-
-  <!-- available -->
-  <aside>
-    {#if date}
-      <h2>Available Rooms</h2>
-      <ul>
-        {#each getAvailableRooms(date.getTime()) as [building, room]}
+<main class="grid">
+  {#each Object.entries(data) as [building, rooms]}
+    <p>{building}</p>
+    <div class="grid">
+      {#each Object.entries(rooms) as [room, _]}
+        {#if availableRooms.findIndex((s) => s[0] === building && s[1] === room) !== -1}
           {@const [startEmpty, endEmpty] = getRoomDuration(
             building,
             room,
             date.getTime()
           )}
-          <li>
-            {building}
-            {room} ({new Date(startEmpty).toLocaleTimeString()} - {new Date(
-              endEmpty
-            ).toLocaleTimeString()})
-          </li>
-        {/each}
-      </ul>
-    {:else}
-      <p>Select a date to see available rooms</p>
-    {/if}
-  </aside>
-</div>
+          {@const startTime = new Date(startEmpty).toLocaleTimeString()}
+          {@const endTime = new Date(endEmpty).toLocaleTimeString()}
+          <p>{room}</p>
+          <p>from {startTime} till {endTime}</p>
+        {/if}
+      {/each}
+    </div>
+  {/each}
+</main>
 
 <style>
   .grid {
@@ -228,21 +198,7 @@
     grid-template-columns: min-content 1fr;
   }
 
-  .grid-leaf {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
   p {
     text-wrap: nowrap;
-  }
-
-  .outer {
-    display: flex;
-  }
-
-  .outer > * {
-    width: 50%;
   }
 </style>
