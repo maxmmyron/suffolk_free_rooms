@@ -152,48 +152,71 @@
   />
 </div>
 
-{#if occupiedKey}
-  {@const occupiedTimes = calcOccupiedTimes(
-    occupiedKey[0],
-    occupiedKey[1],
-    date.getTime()
-  )}
-  {#key occupiedKey}
-    {#each occupiedTimes as occupiedTime}
-      <p>from {occupiedTime[0]} to {occupiedTime[1]}</p>
-    {/each}
-  {/key}
-{/if}
-
-<main class="grid">
-  {#each Object.entries(data) as [building, rooms]}
-    <p>{building}</p>
-    <div class="grid">
-      {#each Object.entries(rooms) as [room, _]}
-        {#if availableRooms.findIndex((s) => s[0] === building && s[1] === room) !== -1}
-          {@const [startEmpty, endEmpty] = calcEmptyRoomTimes(
-            building,
-            room,
-            date.getTime()
-          )}
-          {@const startTime = new Date(startEmpty).toLocaleTimeString()}
-          {@const endTime = new Date(endEmpty).toLocaleTimeString()}
-          <p>{room}</p>
-          <p>from {startTime} till {endTime}</p>
-        {/if}
-      {/each}
-    </div>
+{#each Object.entries(data) as [building, rooms]}
+  {#each Object.entries(rooms) as [room, _]}
+    {#if availableRooms.findIndex((s) => s[0] === building && s[1] === room) !== -1}
+      {@const filledTimes = calcOccupiedTimes(building, room, time)}
+      {@const [startFree, endFree] = calcEmptyRoomTimes(building, room, time)}
+      <article class="room">
+        <h2>{building} {room}</h2>
+        <div>
+          {#each { length: 24 } as _, i}
+            <div class="tick" data-time="{i}:00"></div>
+          {/each}
+          {#each filledTimes as [startFilled, endFilled]}
+            {@const start =
+              (startFilled - getRelTime("00:00:00")) / 3600000 / 24}
+            {@const end = (endFilled - getRelTime("00:00:00")) / 3600000 / 24}
+            <div
+              style="left: {start * 100}%; right: {(1 - end) * 100}%;"
+              class="course-time"
+            ></div>
+          {/each}
+        </div>
+      </article>
+    {/if}
   {/each}
-</main>
+{/each}
 
 <style>
-  .grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: min-content 1fr;
-  }
+  article.room {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    margin: 1rem 0;
+    padding-bottom: 0.5rem;
+    & h2 {
+      font-size: 1.25rem;
+      margin: 0;
+    }
 
-  p {
-    text-wrap: nowrap;
+    & > div {
+      display: grid;
+      grid-template-columns: repeat(24, 1fr);
+      height: 4rem;
+      position: relative;
+
+      background-color: rgba(240, 240, 240, 1);
+      border-radius: 12px;
+
+      & .tick {
+        position: relative;
+        border-left: 1px solid rgba(0, 0, 0, 0.25);
+        &::after {
+          position: absolute;
+          content: attr(data-time);
+          font-size: 0.7rem;
+          color: rgba(60, 60, 60, 1);
+          bottom: 0px;
+        }
+      }
+
+      & .course-time {
+        position: absolute;
+        height: 50%;
+        background-color: blue;
+      }
+    }
   }
 </style>
