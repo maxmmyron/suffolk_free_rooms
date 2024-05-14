@@ -60,7 +60,7 @@
    * TODO: could use some dirty memoization to compare input timestamp
    * with last known timestamp ranges
    */
-  const getRoomDuration = (
+  const calcEmptyRoomTimes = (
     building: string,
     room: string,
     timestamp: number
@@ -77,11 +77,8 @@
       .filter((section) => section.weekDays.includes(day))
       .toSorted((a, b) => getRelTime(a.startTime) - getRelTime(b.startTime));
 
-    console.log(`${building} ${room} ${JSON.stringify(sections)}`);
-
     // break if class is free for day
     if (sections.length === 0) {
-      console.log(`ret early; ${building} ${room}`);
       return [getRelTime("00:00:00"), getRelTime("23:59:59")];
     }
 
@@ -90,18 +87,16 @@
       return [getRelTime("00:00:00"), getRelTime(sections[0].startTime)];
     }
 
-    for (let i = 0; i < sections.length; i++) {
+    for (let i = sections.length - 1; i >= 0; i--) {
       const emptyStart = getRelTime(sections[i].endTime);
 
       if (timestamp > emptyStart) {
         // break if timestamp is after last class ends
         if (i === sections.length - 1) {
-          console.log(building, room);
           return [emptyStart, getRelTime("23:59:59")];
         }
-
         // otherwise, return period between two classes
-        return [emptyStart, getRelTime(sections[i + 1].startTime)];
+        else return [emptyStart, getRelTime(sections[i + 1].startTime)];
       }
     }
 
@@ -119,7 +114,7 @@
    *
    * @throws {Error} if the room is not found
    */
-  const getOccupiedTimes = (
+  const calcOccupiedTimes = (
     building: string,
     room: string,
     timestamp: number
@@ -158,7 +153,7 @@
 </div>
 
 {#if occupiedKey}
-  {@const occupiedTimes = getOccupiedTimes(
+  {@const occupiedTimes = calcOccupiedTimes(
     occupiedKey[0],
     occupiedKey[1],
     date.getTime()
@@ -176,7 +171,7 @@
     <div class="grid">
       {#each Object.entries(rooms) as [room, _]}
         {#if availableRooms.findIndex((s) => s[0] === building && s[1] === room) !== -1}
-          {@const [startEmpty, endEmpty] = getRoomDuration(
+          {@const [startEmpty, endEmpty] = calcEmptyRoomTimes(
             building,
             room,
             date.getTime()
