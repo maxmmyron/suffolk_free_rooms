@@ -284,8 +284,8 @@
     & > .floor {
       grid-column: 1;
       position: relative;
-      width: 100px;
-      height: 25px;
+      width: 120px;
+      height: 32px;
       margin-bottom: -2px;
       transform-style: preserve-3d;
       transform: rotateY(46deg) rotateX(-12deg) rotateZ(-12deg);
@@ -322,35 +322,35 @@
       }
 
       & > .horz {
-        width: 100px;
-        height: 25px;
+        width: 120px;
+        height: 100%;
       }
 
       & > .front {
         background-color: rgb(128, 128, 128);
-        transform: translateZ(50px);
+        transform: translateZ(60px);
         border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
       }
 
       & > .back {
         background-color: rgb(100, 100, 100);
-        transform: rotateY(180deg) translateZ(50px);
+        transform: rotateY(180deg) translateZ(60px);
       }
 
       & > .left {
         background-color: rgb(200, 200, 200);
-        transform: rotateY(-90deg) translateZ(50px);
+        transform: rotateY(-90deg) translateZ(60px);
         border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
       }
 
       & > .right {
         background-color: rgb(80, 80, 80);
-        transform: rotateY(90deg) translateZ(50px);
+        transform: rotateY(90deg) translateZ(60px);
       }
 
       & > .bottom {
-        width: 98px;
-        height: 98px;
+        width: 118px;
+        height: 118px;
         background-color: rgb(40, 40, 40);
         transform: rotateX(-90deg) translateZ(-30px) translateX(1px);
       }
