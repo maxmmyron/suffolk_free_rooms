@@ -1,44 +1,9 @@
 <script lang="ts">
-  export let data: {
-    [building: string]: {
-      [room: string]: {
-        [section: string]: {
-          startTime: string;
-          endTime: string;
-          weekDays: number[];
-        };
-      };
-    };
-  };
+  import Building from "$lib/Building.svelte";
+  import Scene from "$lib/Scene.svelte";
+  import { Canvas, type ThrelteContext } from "@threlte/core";
 
-  const floorMap = new Map([
-    // SAWYER: A, B, 1-11
-    [
-      "Sawyer",
-      [
-        "A",
-        "B",
-        ...Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
-      ],
-    ],
-    // STAHL: 1-9
-    [
-      "Rosalie K. Stahl Bldg",
-      [...Array.from({ length: 9 }).map((_, i) => (i + 1).toString())],
-    ],
-    // SAMIA: B, 1-8
-    [
-      "Samia Academic Center",
-      ["B", ...Array.from({ length: 8 }).map((_, i) => (i + 1).toString())],
-    ],
-    // SARGENT: 1-5
-    [
-      "Sargent Hall",
-      [...Array.from({ length: 5 }).map((_, i) => (i + 1).toString())],
-    ],
-    // BEACON: 1
-    ["1 Beacon", ["1"]],
-  ]);
+  export let data: App.SectionData;
 
   let date = new Date();
   $: time = date.getTime();
@@ -171,43 +136,42 @@
     ]);
   };
 
-  /**
-   * Gets the floor a room is on based on the building
-   * @param building
-   * @param rooms
-   */
-  const getAvailableFloorRooms = (
-    building: string,
-    rooms: [string, string][],
-    floor: string
-  ): [string, string][] => {
-    switch (building) {
-      case "Sawyer":
-        // EITHER XYY or XXYY, so trim away YY to get X/XX (floor)
-        return rooms.filter(([_, r]) => r.substring(0, r.length - 2) === floor);
-      case "Rosalie K. Stahl Bldg":
-        return rooms.filter(([_, r]) => r[0] === floor);
-      case "Samia Academic Center":
-        return rooms.filter(([_, r]) => r[0] === floor);
-      case "Sargent Hall":
-        return rooms.filter(([_, r]) => r[0] === floor);
-      default:
-        return rooms;
-    }
-  };
+  let building: string = "Sawyer";
+  let canvasWidth: number;
+  let canvasHeight: number;
 </script>
 
-<label>
-  <input
-    type="datetime-local"
-    on:input={(e) => {
-      date = new Date(e.currentTarget.value);
-    }}
-  />
-  <output>{date.toString()}</output>
-</label>
+<main>
+  <aside>
+    <label>
+      <input
+        type="datetime-local"
+        on:input={(e) => {
+          date = new Date(e.currentTarget.value);
+        }}
+      />
+      <output>{date.toString()}</output>
+    </label>
 
-<div class="buildings">
+    <label>
+      <select bind:value={building}>
+        <option value="Sawyer">Sawyer</option>
+        <option value="Rosalie K. Stahl Bldg">Rosalie K. Stahl Bldg</option>
+        <option value="Samia Academic Center">Samia Academic Center</option>
+        <option value="Sargent Hall">Sargent Hall</option>
+        <option value="1 Beacon">1 Beacon</option>
+      </select>
+    </label>
+  </aside>
+
+  <div bind:clientWidth={canvasWidth} bind:clientHeight={canvasHeight}>
+    <Canvas size={{ width: canvasWidth, height: canvasHeight }}>
+      <Scene bind:building bind:availableRooms />
+    </Canvas>
+  </div>
+</main>
+
+<!-- <div class="buildings">
   {#each Object.entries(data) as [building, rooms]}
     {@const availableBuildingRooms = availableRooms.filter(
       (p) => p[0] === building
@@ -257,9 +221,17 @@
       </div>
     {/if}
   {/each}
-</div>
+</div> -->
 
 <style>
+  main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+  }
+
   .buildings {
     display: flex;
     flex-wrap: wrap;

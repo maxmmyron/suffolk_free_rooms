@@ -1,5 +1,7 @@
 body {
   font-family: "Lilex", "Courier New", Courier, monospace;
+  margin: 0;
+  overflow: hidden;
 }
 
 table {
