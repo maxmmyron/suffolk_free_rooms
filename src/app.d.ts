@@ -13,6 +13,9 @@ declare global {
       };
     };
   }
+
+  type Building = "Sawyer" | "Rosalie K. Stahl Bldg" | "Samia Academic Center" | "Sargent Hall" | "1 Beacon";
+
 		// interface Error {}
 		// interface Locals {}
 		// interface PageData {}

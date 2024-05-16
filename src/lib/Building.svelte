@@ -8,7 +8,7 @@
   /**
    * Full building name
    */
-  export let building: string;
+  export let building: App.Building;
 
   /**
    * path to gltf model
@@ -34,11 +34,12 @@
 </script>
 
 {#if $gltf}
-  {#each floors.toReversed() as floor, i}
+  {#each floors as floor, i}
     <Floor
       offset={i}
       geometry={$gltf.nodes["Floor"].geometry}
       hasFreeRooms={getAvailableFloorRooms(building, rooms, floor).length !== 0}
+      {floor}
     />
   {/each}
 {/if}

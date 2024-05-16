@@ -1,7 +1,9 @@
 <script lang="ts">
   import Building from "$lib/Building.svelte";
+  import { currentBuilding, currentFloor } from "$lib/stores";
   import Scene from "$lib/Scene.svelte";
   import { Canvas, type ThrelteContext } from "@threlte/core";
+  import { floorMap, getAvailableFloorRooms } from "$lib";
 
   export let data: App.SectionData;
 
@@ -136,7 +138,6 @@
     ]);
   };
 
-  let building: string = "Sawyer";
   let canvasWidth: number;
   let canvasHeight: number;
 </script>
@@ -154,7 +155,12 @@
     </label>
 
     <label>
-      <select bind:value={building}>
+      <select
+        bind:value={$currentBuilding}
+        on:change={() => {
+          $currentFloor = null;
+        }}
+      >
         <option value="Sawyer">Sawyer</option>
         <option value="Rosalie K. Stahl Bldg">Rosalie K. Stahl Bldg</option>
         <option value="Samia Academic Center">Samia Academic Center</option>
@@ -162,11 +168,42 @@
         <option value="1 Beacon">1 Beacon</option>
       </select>
     </label>
+
+    {#if $currentFloor && floorMap
+        .get($currentBuilding)
+        ?.floors.includes($currentFloor)}
+      {@const availableBuildingRooms = availableRooms.filter(
+        (p) => p[0] === $currentBuilding
+      )}
+
+      {@const availableFloorRooms = getAvailableFloorRooms(
+        $currentBuilding,
+        availableBuildingRooms,
+        $currentFloor
+      )}
+
+      <ul>
+        {#each availableFloorRooms as [building, room]}
+          {@const [startFree, endFree] = calcEmptyRoomTimes(
+            building,
+            room,
+            time
+          )}
+          {@const startFreeTime = new Date(startFree).toLocaleTimeString()}
+          {@const endFreeTime = new Date(endFree).toLocaleTimeString()}
+          <li>
+            {building}
+            {room} <br />
+            {startFreeTime} - {endFreeTime}
+          </li>
+        {/each}
+      </ul>
+    {/if}
   </aside>
 
   <div bind:clientWidth={canvasWidth} bind:clientHeight={canvasHeight}>
     <Canvas size={{ width: canvasWidth, height: canvasHeight }}>
-      <Scene bind:building bind:availableRooms />
+      <Scene bind:availableRooms />
     </Canvas>
   </div>
 </main>

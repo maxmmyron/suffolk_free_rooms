@@ -4,7 +4,7 @@
  * @param rooms
  */
 export const getAvailableFloorRooms = (
-  building: string,
+  building: App.Building,
   rooms: [string, string][],
   floor: string
 ): [string, string][] => {
@@ -24,7 +24,7 @@ export const getAvailableFloorRooms = (
 };
 
 export const floorMap: Map<
-  string,
+  App.Building,
   {
     floors: string[];
     gltfPath: string;

@@ -1,8 +1,10 @@
 <script lang="ts">
+  import { currentFloor } from "$lib/stores";
   import { forwardEventHandlers, T } from "@threlte/core";
   import { useCursor } from "@threlte/extras";
   import { MeshStandardMaterial } from "three";
 
+  export let floor: string;
   export let hasFreeRooms: boolean;
   export let geometry;
   export let offset: number;
@@ -20,11 +22,17 @@
     {geometry}
     on:pointerenter={onPointerEnter}
     on:pointerleave={onPointerLeave}
-    on:pointerenter={() => {
+    on:pointerenter={(e) => {
+      e.stopPropagation();
       if (hasFreeRooms) color = "blue";
     }}
-    on:pointerleave={() => {
+    on:pointerleave={(e) => {
+      e.stopPropagation();
       if (hasFreeRooms) color = "red";
+    }}
+    on:click={(e) => {
+      e.stopPropagation();
+      $currentFloor = floor;
     }}
     material={new MeshStandardMaterial({
       roughness: 1,
