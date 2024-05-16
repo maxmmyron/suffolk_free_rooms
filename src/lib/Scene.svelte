@@ -4,6 +4,7 @@
   import { T } from "@threlte/core";
   import { OrbitControls, Sky, interactivity } from "@threlte/extras";
   import Building from "./Building.svelte";
+  import { SheetObject } from "@threlte/theatre";
 
   export let availableRooms: [string, string][];
 
@@ -16,21 +17,27 @@
 
 {#key $currentBuilding}
   {#if $currentBuilding && data}
-    <T.PerspectiveCamera
-      makeDefault
-      position={[20, data.floors.length * 2, -20]}
-      lookAt.y={data.floors.length}
-    >
-      <OrbitControls enableDamping />
-    </T.PerspectiveCamera>
+    <SheetObject key="camera" let:Transform>
+      <Transform>
+        <T.PerspectiveCamera
+          makeDefault
+          position={[20, data.floors.length * 2, -20]}
+          lookAt.y={0}
+        >
+          <OrbitControls enableDamping />
+        </T.PerspectiveCamera>
+      </Transform>
+    </SheetObject>
     {@const buildingRooms = availableRooms.filter(
       (p) => p[0] === $currentBuilding
     )}
-    <Building
-      building={$currentBuilding}
-      floors={data.floors}
-      rooms={buildingRooms}
-      path={data.gltfPath}
-    />
+    <SheetObject key="building">
+      <Building
+        building={$currentBuilding}
+        floors={data.floors}
+        rooms={buildingRooms}
+        path={data.gltfPath}
+      />
+    </SheetObject>
   {/if}
 {/key}

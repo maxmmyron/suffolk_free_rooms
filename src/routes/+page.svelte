@@ -3,6 +3,7 @@
   import { currentBuilding, currentFloor } from "$lib/stores";
   import Scene from "$lib/Scene.svelte";
   import { Canvas, type ThrelteContext } from "@threlte/core";
+  import { Studio, Theatre } from "@threlte/theatre";
   import { floorMap, getAvailableFloorRooms } from "$lib";
 
   export let data: App.SectionData;
@@ -142,6 +143,8 @@
   let canvasHeight: number;
 </script>
 
+<Studio enabled={true} />
+
 <main>
   <aside>
     <label>
@@ -203,7 +206,9 @@
 
   <div bind:clientWidth={canvasWidth} bind:clientHeight={canvasHeight}>
     <Canvas size={{ width: canvasWidth, height: canvasHeight }}>
-      <Scene bind:availableRooms />
+      <Theatre>
+        <Scene bind:availableRooms />
+      </Theatre>
     </Canvas>
   </div>
 </main>

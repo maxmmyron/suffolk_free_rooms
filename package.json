@@ -30,6 +30,7 @@
   "dependencies": {
     "@threlte/core": "^7.3.0",
     "@threlte/extras": "^8.11.2",
+    "@threlte/theatre": "^2.1.7",
     "@types/three": "^0.164.0",
     "three": "^0.164.1"
   }
