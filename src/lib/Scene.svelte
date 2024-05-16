@@ -1,8 +1,8 @@
 <script lang="ts">
   import { currentBuilding } from "$lib/stores";
-  import { floorMap, getAvailableFloorRooms } from "$lib";
+  import { floorMap } from "$lib";
   import { T } from "@threlte/core";
-  import { OrbitControls, Sky, interactivity } from "@threlte/extras";
+  import { Sky, interactivity, transitions } from "@threlte/extras";
   import Building from "./Building.svelte";
   import { SheetObject } from "@threlte/theatre";
 
@@ -11,33 +11,46 @@
   $: data = floorMap.get($currentBuilding)!;
 
   interactivity();
+  transitions();
+
+  /**
+   * TODO: add smooth transition between prev and next cam pos
+   * position={[
+            10 + data.floors.length * 0.5,
+            camHeight,
+            -10 - data.floors.length * 0.5,
+          ]}
+
+          on:create={({ ref }) => {
+            ref.lookAt(0, data.floors.length / 2, 0);
+          }}
+  */
 </script>
 
 <Sky elevation={0.5} />
 
+<SheetObject key="camera" let:Transform>
+  <Transform>
+    <T.PerspectiveCamera
+      makeDefault
+      position={[15, 10, -15]}
+      on:create={({ ref }) => {
+        ref.lookAt(0, 5, 0);
+      }}
+    />
+  </Transform>
+</SheetObject>
+
 {#key $currentBuilding}
-  {#if $currentBuilding && data}
-    <SheetObject key="camera" let:Transform>
-      <Transform>
-        <T.PerspectiveCamera
-          makeDefault
-          position={[20, data.floors.length * 2, -20]}
-          lookAt.y={0}
-        >
-          <OrbitControls enableDamping />
-        </T.PerspectiveCamera>
-      </Transform>
-    </SheetObject>
+  {#if data}
     {@const buildingRooms = availableRooms.filter(
       (p) => p[0] === $currentBuilding
     )}
-    <SheetObject key="building">
-      <Building
-        building={$currentBuilding}
-        floors={data.floors}
-        rooms={buildingRooms}
-        path={data.gltfPath}
-      />
-    </SheetObject>
+    <Building
+      building={$currentBuilding}
+      floors={data.floors}
+      rooms={buildingRooms}
+      path={data.gltfPath}
+    />
   {/if}
 {/key}

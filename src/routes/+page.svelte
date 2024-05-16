@@ -271,7 +271,7 @@
     height: 100vh;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 600px 1fr;
+    grid-template-columns: 200px 1fr;
   }
 
   .buildings {
