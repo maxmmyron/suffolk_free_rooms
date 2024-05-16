@@ -17,7 +17,6 @@
   const fly = createTransition<Mesh>((ref, { direction }) => {
     return {
       tick: (t) => {
-        console.log(direction, t);
         if (direction === "in") {
           ref.position.set(
             ref.position.x,
