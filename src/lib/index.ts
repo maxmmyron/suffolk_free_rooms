@@ -27,7 +27,11 @@ export const floorMap: Map<
   App.Building,
   {
     floors: string[];
-    gltfPath: string;
+    modelData: {
+      lobby?: [string, number]
+      default: [string, number];
+      roof?: [string, number?];
+    }
   }
 > = new Map([
   // SAWYER: A, B, 1-11
@@ -39,17 +43,24 @@ export const floorMap: Map<
         "B",
         ...Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
       ],
-      gltfPath: "/sawyer.gltf",
+      modelData: {
+        default: ["/sawyer/floor.gltf", 4.02968],
+        roof: ["/sawyer/roof.gltf"],
+      }
     },
   ],
-  // STAHL: 1-9
+  // STAHL: 1-9 (but show till 11)
   [
     "Rosalie K. Stahl Bldg",
     {
       floors: [
-        ...Array.from({ length: 9 }).map((_, i) => (i + 1).toString()),
+        ...Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
       ],
-      gltfPath: "/stahl.gltf",
+      modelData: {
+        lobby: ["/stahl/lobby.gltf", 5],
+        default: ["/stahl/floor.gltf", 4.02968],
+        roof: ["/stahl/roof.gltf"],
+      }
     },
   ],
   // SAMIA: B, 1-8
@@ -60,7 +71,10 @@ export const floorMap: Map<
         "B",
         ...Array.from({ length: 8 }).map((_, i) => (i + 1).toString()),
       ],
-      gltfPath: "/samia.gltf",
+      modelData: {
+        default: ["/samia/floor.gltf", 4.02968],
+        roof: ["/samia/roof.gltf"],
+      }
     },
   ],
   // SARGENT: 1-5
@@ -70,9 +84,17 @@ export const floorMap: Map<
       floors: [
         ...Array.from({ length: 5 }).map((_, i) => (i + 1).toString()),
       ],
-      gltfPath: "/sargent.gltf",
+      modelData: {
+        default: ["/sargent/floor.gltf", 4.02968],
+        roof: ["/sawyer/roof.gltf"],
+      }
     },
   ],
   // BEACON: 1
-  ["1 Beacon", { floors: ["1"], gltfPath: "/beacon.gltf" }],
+  ["1 Beacon", {
+    floors: ["1"],
+    modelData: {
+      default: ["/beacon/floor.gltf", 4.02968],
+    }
+  }],
 ]);

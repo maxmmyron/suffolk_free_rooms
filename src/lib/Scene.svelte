@@ -2,22 +2,31 @@
   import { currentBuilding, cameraAnimator } from "$lib/stores";
   import { floorMap } from "$lib";
   import { T } from "@threlte/core";
-  import { Sky, interactivity, transitions } from "@threlte/extras";
+  import {
+    OrbitControls,
+    Sky,
+    interactivity,
+    transitions,
+  } from "@threlte/extras";
   import Building from "./Building.svelte";
   import { SheetObject } from "@threlte/theatre";
   import CameraAnimator from "./CameraAnimator.svelte";
   import {
+    AmbientLight,
     Sphere,
     Vector3,
     type OrthographicCamera,
     type PerspectiveCamera,
   } from "three";
+  import Stahl from "./buildings/Stahl.svelte";
 
   export let availableRooms: [string, string][];
 
   $: data = floorMap.get($currentBuilding)!;
 
   let camera: PerspectiveCamera | OrthographicCamera;
+
+  let stahlHeight: number;
 
   $: if ($cameraAnimator) {
     // @ts-ignore
@@ -33,16 +42,23 @@
       return;
     }
 
+    if (building === "Rosalie K. Stahl Bldg") {
+      let sphere = new Sphere(new Vector3(0, stahlHeight / 2, 0), 6);
+      $cameraAnimator.fitToSphere(sphere, true);
+      return;
+    }
+
     let sphere = new Sphere(
       new Vector3(0, data.floors.length / 2, 0),
-      Math.max(data.floors.length, 6)
+      Math.max(data.floors.length * 0.7, 6)
     );
 
     $cameraAnimator.fitToSphere(sphere, true);
   })($currentBuilding);
 </script>
 
-<Sky elevation={0.5} />
+<T.AmbientLight intensity={0.5} />
+<T.DirectionalLight position={[0, 10, 10]} castShadow />
 
 <SheetObject key="camera" let:Transform>
   <Transform>
@@ -53,11 +69,12 @@
         ref.lookAt(0, 5, 0);
       }}
     >
-      <CameraAnimator
+      <!-- <CameraAnimator
         on:create={({ ref }) => {
           $cameraAnimator = ref;
         }}
-      />
+      /> -->
+      <OrbitControls />
     </T.PerspectiveCamera>
   </Transform>
 </SheetObject>
@@ -67,11 +84,15 @@
     {@const buildingRooms = availableRooms.filter(
       (p) => p[0] === $currentBuilding
     )}
-    <Building
-      building={$currentBuilding}
-      floors={data.floors}
-      rooms={buildingRooms}
-      path={data.gltfPath}
-    />
+    {#if $currentBuilding === "Rosalie K. Stahl Bldg"}
+      <Stahl rooms={buildingRooms} bind:height={stahlHeight} />
+    {:else}
+      <Building
+        building={$currentBuilding}
+        floors={data.floors}
+        rooms={buildingRooms}
+        path={data.gltfPath}
+      />
+    {/if}
   {/if}
 {/key}

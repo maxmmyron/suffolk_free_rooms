@@ -1,0 +1,98 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Floor"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "noname25833",
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "BOS-60MUM-6NVYC-D0CWY.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1
+                    },
+                    "indices" : 2,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 60,
+            "max" : [
+                40.310977935791016,
+                5.0000433921813965,
+                42.72441482543945
+            ],
+            "min" : [
+                -28.48929214477539,
+                -5.1744045777013525e-06,
+                -29.35841178894043
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 60,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5123,
+            "count" : 90,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 720,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 720,
+            "byteOffset" : 720
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 180,
+            "byteOffset" : 1440
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1620,
+            "uri" : "data:application/octet-stream;base64,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"
+        }
+    ]
+}

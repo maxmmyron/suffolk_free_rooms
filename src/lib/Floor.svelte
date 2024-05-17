@@ -2,11 +2,16 @@
   import { currentFloor } from "$lib/stores";
   import { forwardEventHandlers, T } from "@threlte/core";
   import { createTransition, useCursor } from "@threlte/extras";
-  import { Group, Mesh, MeshStandardMaterial } from "three";
+  import {
+    Group,
+    Mesh,
+    MeshLambertMaterial,
+    MeshStandardMaterial,
+  } from "three";
   import { cubicOut } from "svelte/easing";
 
-  export let floor: string;
-  export let hasFreeRooms: boolean;
+  export let floor: string | null = null;
+  export let hasFreeRooms: boolean = false;
   export let geometry;
   export let offset: number;
 
@@ -39,10 +44,14 @@
   });
 
   const { onPointerEnter, onPointerLeave } = useCursor();
+
+  console.log(offset);
 </script>
 
 <T.Group {...$$restProps} bind:this={$component}>
   <T.Mesh
+    castShadow
+    receiveShadow
     in={fly}
     out={fly}
     position.y={offset}
@@ -61,8 +70,7 @@
       e.stopPropagation();
       $currentFloor = floor;
     }}
-    material={new MeshStandardMaterial({
-      roughness: 1,
+    material={new MeshLambertMaterial({
       color,
     })}
   />
