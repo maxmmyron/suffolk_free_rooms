@@ -14,20 +14,21 @@
 
   const component = forwardEventHandlers();
 
+  // TODO: smoother transitions (not just cubic out/in, maybe spring?)
   const fly = createTransition<Mesh>((ref, { direction }) => {
     return {
       tick: (t) => {
         if (direction === "in") {
           ref.position.set(
             ref.position.x,
-            offset + (1 - t) * -20,
+            offset + (1 - t) * -30,
             ref.position.z
           );
         }
         if (direction === "out") {
           ref.position.set(
             ref.position.x,
-            offset + (1 - t) * 20,
+            offset + (1 - t) * 30,
             ref.position.z
           );
         }
