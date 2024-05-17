@@ -53,13 +53,11 @@ export const floorMap: Map<
   [
     "Rosalie K. Stahl Bldg",
     {
-      floors: [
-        ...Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
-      ],
+      floors: Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
       modelData: {
         lobby: ["/stahl/lobby.gltf", 5],
         default: ["/stahl/floor.gltf", 4.02968],
-        roof: ["/stahl/roof.gltf"],
+        roof: ["/stahl/roof.gltf", 15.5444],
       }
     },
   ],
@@ -81,9 +79,7 @@ export const floorMap: Map<
   [
     "Sargent Hall",
     {
-      floors: [
-        ...Array.from({ length: 5 }).map((_, i) => (i + 1).toString()),
-      ],
+      floors: Array.from({ length: 5 }).map((_, i) => (i + 1).toString()),
       modelData: {
         default: ["/sargent/floor.gltf", 4.02968],
         roof: ["/sawyer/roof.gltf"],
@@ -94,7 +90,8 @@ export const floorMap: Map<
   ["1 Beacon", {
     floors: ["1"],
     modelData: {
-      default: ["/beacon/floor.gltf", 4.02968],
+      default: ["/beacon/floor.gltf", 8],
+      roof: ["/beacon/roof.gltf", 147.901],
     }
   }],
 ]);
