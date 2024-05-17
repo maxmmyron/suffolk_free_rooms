@@ -12,13 +12,11 @@
   import { SheetObject } from "@threlte/theatre";
   import CameraAnimator from "./CameraAnimator.svelte";
   import {
-    AmbientLight,
     Sphere,
     Vector3,
     type OrthographicCamera,
     type PerspectiveCamera,
   } from "three";
-  import Stahl from "./buildings/Stahl.svelte";
 
   export let availableRooms: [string, string][];
 
@@ -26,7 +24,8 @@
 
   let camera: PerspectiveCamera | OrthographicCamera;
 
-  let stahlHeight: number;
+  // bind height so we can refit camera
+  let height: number;
 
   $: if ($cameraAnimator) {
     // @ts-ignore
@@ -43,7 +42,7 @@
     }
 
     if (building === "Rosalie K. Stahl Bldg") {
-      let sphere = new Sphere(new Vector3(0, stahlHeight / 2, 0), 6);
+      let sphere = new Sphere(new Vector3(0, height / 2, 0), height / 2);
       $cameraAnimator.fitToSphere(sphere, true);
       return;
     }
@@ -69,12 +68,12 @@
         ref.lookAt(0, 5, 0);
       }}
     >
-      <!-- <CameraAnimator
+      <CameraAnimator
         on:create={({ ref }) => {
           $cameraAnimator = ref;
         }}
-      /> -->
-      <OrbitControls />
+      />
+      <!-- <OrbitControls /> -->
     </T.PerspectiveCamera>
   </Transform>
 </SheetObject>
@@ -84,15 +83,12 @@
     {@const buildingRooms = availableRooms.filter(
       (p) => p[0] === $currentBuilding
     )}
-    {#if $currentBuilding === "Rosalie K. Stahl Bldg"}
-      <Stahl rooms={buildingRooms} bind:height={stahlHeight} />
-    {:else}
-      <Building
-        building={$currentBuilding}
-        floors={data.floors}
-        rooms={buildingRooms}
-        path={data.gltfPath}
-      />
-    {/if}
+    <Building
+      building={$currentBuilding}
+      floors={data.floors}
+      rooms={buildingRooms}
+      modelData={data.modelData}
+      bind:height
+    />
   {/if}
 {/key}
