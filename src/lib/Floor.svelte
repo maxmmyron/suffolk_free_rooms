@@ -1,19 +1,30 @@
 <script lang="ts">
   import { currentFloor } from "$lib/stores";
-  import { forwardEventHandlers, T } from "@threlte/core";
-  import { createTransition, useCursor } from "@threlte/extras";
+  import { forwardEventHandlers, T, type AsyncWritable } from "@threlte/core";
   import {
-    Group,
-    Mesh,
-    MeshLambertMaterial,
-    MeshStandardMaterial,
-  } from "three";
+    createTransition,
+    useCursor,
+    type ThrelteGltf,
+  } from "@threlte/extras";
+  import { Mesh, MeshLambertMaterial } from "three";
   import { cubicOut } from "svelte/easing";
+
+  export let offset: number;
+  export let store: AsyncWritable<
+    ThrelteGltf<{
+      nodes: Record<string, any>;
+      materials: Record<string, any>;
+    }>
+  >;
 
   export let floor: string | null = null;
   export let hasFreeRooms: boolean = false;
-  export let geometry;
-  export let offset: number;
+
+  /**
+   * Building height. used for transitioning camera
+   * TODO: lazy
+   */
+  export let transitionHeight: number = 400;
 
   let color = hasFreeRooms ? "red" : "white";
 
@@ -26,52 +37,54 @@
         if (direction === "in") {
           ref.position.set(
             ref.position.x,
-            offset + (1 - t) * -30,
+            offset + (1 - t) * -transitionHeight,
             ref.position.z
           );
         }
         if (direction === "out") {
           ref.position.set(
             ref.position.x,
-            offset + (1 - t) * 30,
+            offset + (1 - t) * transitionHeight,
             ref.position.z
           );
         }
       },
-      duration: 1000,
+      duration: 1600,
       easing: cubicOut,
     };
   });
 
   const { onPointerEnter, onPointerLeave } = useCursor();
 
-  console.log(offset);
+  console.log(`floor ${floor} ${offset}`);
 </script>
 
-<T.Group {...$$restProps} bind:this={$component}>
-  <T.Mesh
-    castShadow
-    receiveShadow
-    in={fly}
-    out={fly}
-    position.y={offset}
-    {geometry}
-    on:pointerenter={onPointerEnter}
-    on:pointerleave={onPointerLeave}
-    on:pointerenter={(e) => {
-      e.stopPropagation();
-      if (hasFreeRooms) color = "blue";
-    }}
-    on:pointerleave={(e) => {
-      e.stopPropagation();
-      if (hasFreeRooms) color = "red";
-    }}
-    on:click={(e) => {
-      e.stopPropagation();
-      $currentFloor = floor;
-    }}
-    material={new MeshLambertMaterial({
-      color,
-    })}
-  />
-</T.Group>
+{#if $store}
+  <T.Group {...$$restProps} bind:this={$component}>
+    <T.Mesh
+      castShadow
+      receiveShadow
+      in={fly}
+      out={fly}
+      position.y={offset}
+      geometry={$store.nodes["Floor"].geometry}
+      on:pointerenter={onPointerEnter}
+      on:pointerleave={onPointerLeave}
+      on:pointerenter={(e) => {
+        e.stopPropagation();
+        if (hasFreeRooms) color = "blue";
+      }}
+      on:pointerleave={(e) => {
+        e.stopPropagation();
+        if (hasFreeRooms) color = "red";
+      }}
+      on:click={(e) => {
+        e.stopPropagation();
+        $currentFloor = floor;
+      }}
+      material={new MeshLambertMaterial({
+        color,
+      })}
+    />
+  </T.Group>
+{/if}

@@ -1,0 +1,98 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Floor"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "noname231627",
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "BOS-XYZAU-ITX7Y-92AWY.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1
+                    },
+                    "indices" : 2,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 48,
+            "max" : [
+                12.069523811340332,
+                0.005750090815126896,
+                8.482121467590332
+            ],
+            "min" : [
+                -20.639755249023438,
+                -4.0007243156433105,
+                -14.703224182128906
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 48,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5123,
+            "count" : 72,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 576,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 576,
+            "byteOffset" : 576
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 144,
+            "byteOffset" : 1152
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1296,
+            "uri" : "data:application/octet-stream;base64,xRxBQekFgMBoQGvBxRxBQekFgMBoQGvBIykBwe8FgMDFtgdBIykBwe8FgMDFtgdBivZWQO8FgMCCmQdBivZWQO8FgMCCmQdBocVSQO8FgMAt7v5AocVSQO8FgMAt7v5AOB6lwe8FgMBIeOZAOB6lwe8FgMBIeOZAvpg2Qe8FgMA+ngNBvpg2Qe8FgMA+ngNBmTOVwZ32f8CSB1bBmTOVwZ32f8CSB1bBkw32wO4FgMDDZb1Akw32wO4FgMDDZb1AriRUvu4FgMDzibJAriRUvu4FgMDzibJABn45QdChf8A4Q/g/Bn45QdChf8A4Q/g/vC0+Qcuhf8DE7gTBvC0+Qcuhf8DE7gTBdjK+vaj2f8A07AFBdjK+vaj2f8A07AFBdjK+vdqLFTo07AFBdjK+vdqLFTo07AFBvC0+QUJrvDvE7gTBvC0+QUJrvDvE7gTBBn45QQJhvDs4Q/g/Bn45QQJhvDs4Q/g/riRUvgjGPbrzibJAriRUvgjGPbrzibJAkw32wL/IPbrDZb1Akw32wL/IPbrDZb1AmTOVwdQ3FjqSB1bBmTOVwdQ3FjqSB1bBvpg2QTXbPbo+ngNBvpg2QTXbPbo+ngNBOB6lwQTTPbpIeOZAOB6lwQTTPbpIeOZAocVSQCLZPbot7v5AocVSQCLZPbot7v5AivZWQDPdPbqCmQdBivZWQDPdPbqCmQdBIykBwUHdPbrFtgdBIykBwUHdPbrFtgdBxRxBQcYjPbpnQGvBxRxBQcYjPbpnQGvB5K8wveA1hTQAw3+/FeV/PwAAAADYyeo8moLPvQAAAAC5rn4/IC99PwAAAACpdhc+B+d9vwAAAAD60AI+zAD9PAAAAAC+4H8/B+d9vwAAAAD60AI+IZk5PQAAAACwvH8/2s9+vwAAAABpFMW9moLPvQAAAAC5rn4/zAD9PAAAAAC+4H8/3OR/PwAAAABRu+s82s9+vwAAAABpFMW95K8wveA1hTQAw3+/hpM5PQAAAAC0vH8/IC99PwAAAACpdhc+yb1/vwAAAACDEzg9hpM5PQAAAAC0vH8/3OR/PwAAAABRu+s8QOV/PwAAAAAaC+o8FeV/PwAAAADYyeo8QOV/PwAAAAAaC+o8yb1/vwAAAACDEzg9IZk5PQAAAACwvH8/yb1/vwAAAACDEzg9IZk5PQAAAACwvH8/FeV/PwAAAADYyeo8QOV/PwAAAAAaC+o83OR/PwAAAABRu+s8QOV/PwAAAAAaC+o8yb1/vwAAAACDEzg9hpM5PQAAAAC0vH8/hpM5PQAAAAC0vH8/IC99PwAAAACpdhc+2s9+vwAAAABpFMW95K8wveA1hTQAw3+/zAD9PAAAAAC+4H8/3OR/PwAAAABRu+s82s9+vwAAAABpFMW9moLPvQAAAAC5rn4/B+d9vwAAAAD60AI+IZk5PQAAAACwvH8/B+d9vwAAAAD60AI+zAD9PAAAAAC+4H8/moLPvQAAAAC5rn4/IC99PwAAAACpdhc+5K8wveA1hTQAw3+/FeV/PwAAAADYyeo8KgAoAAYAKgAGAAQAIwAuAAAAIwAAAA0AHAAlAAsAHAALABIALAAnAAkALAAJAAIAIQAtAAMAIQADAA8ALwAaABQALwAUAAEAHwAgAA4AHwAOABEAGwAdABMAGwATABUAJAArAAUAJAAFAAoAJgAiAAwAJgAMAAgAKQAZABcAKQAXAAcAGAAeABAAGAAQABYA"
+        }
+    ]
+}

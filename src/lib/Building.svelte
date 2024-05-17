@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { getAvailableFloorRooms } from "$lib";
-  import { T } from "@threlte/core";
-  import { useGltf } from "@threlte/extras";
-  import { Color, MeshStandardMaterial } from "three";
+  import { floorMap, getAvailableFloorRooms } from "$lib";
+  import type { AsyncWritable } from "@threlte/core";
+  import { useGltf, type ThrelteGltf } from "@threlte/extras";
   import Floor from "./Floor.svelte";
 
   /**
@@ -11,54 +10,89 @@
   export let building: App.Building;
 
   /**
-   * path to gltf model
-   */
-  export let modelData: {
-    lobby?: [string, number];
-    default: [string, number];
-    roof?: [string, number?];
-  };
-
-  /**
-   * array of floor names, from bottom floor -> top
-   */
-  export let floors: string[];
-
-  /**
    * array of building/room pairs
    */
   export let rooms: [string, string][];
 
+  const { floors, modelData, modelMap } = floorMap.get(building)!;
+
+  let modelStores = new Map<
+    string,
+    AsyncWritable<
+      ThrelteGltf<{
+        nodes: Record<string, any>;
+        materials: Record<string, any>;
+      }>
+    >
+  >();
+
+  for (const [key, value] of Object.entries(modelData)) {
+    if (value) modelStores.set(key, useGltf(value[0]));
+  }
+
   /**
-   * X offset of model
+   * Gets the height of the building up to the ith floor
+   * @param floors array of floor names, so we can index for special models
+   * @param i floor index to stop at. Defaults to -1, which returns the total height
    */
-  // export let offset = 0;
+  const getFloorHeight = (floors: string[], i: number = -1): number => {
+    let sum = 0;
+    for (let j = 0; j <= floors.length; j++) {
+      if (j === i) return sum;
 
-  // const lobbyGltf = useGltf(modelData.lobby![0]);
-  // const defaultGltf = useGltf(modelData.default[0]);
-  // const roofGltf = useGltf(modelData.roof![0]);
+      if (modelMap && modelMap[floors[j]]) {
+        sum += modelData[modelMap[floors[j]]]![1];
+      } else {
+        sum += modelData.default[1];
+      }
+    }
 
-  let floorHeight = modelData.lobby
-    ? modelData.lobby[1] + modelData.default[1] * (floors.length - 1)
-    : modelData.default[1] * floors.length;
+    return sum;
+  };
+
+  // WARNING: this is a hack to get around the lack of typescript syntax in svelte html (thank god for svelte 5)
+  const getModel_HACK = (floor: string) => {
+    return modelStores.get(floor)!;
+  };
 
   export const height =
-    floorHeight + (modelData.roof ? modelData.roof[1] ?? 0 : 0);
+    getFloorHeight(floors) + (modelData.roof ? modelData.roof[1] : 0);
 
-  const defaultGltf = useGltf(modelData.default[0]);
-  const lobbyGltf = modelData.lobby ? useGltf(modelData.lobby[0]) : null;
-  const roofGltf = modelData.roof ? useGltf(modelData.roof[0]) : null;
+  $: console.log(floors);
 </script>
 
+{#each floors as floor, i}
+  {@const offset = getFloorHeight(floors, i)}
+  {@const hasFreeRooms =
+    getAvailableFloorRooms(building, rooms, floor).length !== 0}
+  {#if modelMap && modelMap[floor]}
+    {#if modelStores.get(floor)}
+      {@debug floor}
+      <Floor {offset} store={getModel_HACK(floor)} {hasFreeRooms} {floor} />
+    {/if}
+  {:else}
+    <Floor {offset} store={getModel_HACK("default")} {hasFreeRooms} {floor} />
+  {/if}
+{/each}
+
+{#if modelStores.has("roof")}
+  <Floor offset={getFloorHeight(floors)} store={getModel_HACK("roof")} />
+{/if}
+
+<!--
 {#if $defaultGltf}
   {#each floors as floor, i}
-    <!-- need to check if on ground floor *and* lobbyGltf exists *and* lobbyGltf store is loaded! -->
-    {#if i === 0 && lobbyGltf && $lobbyGltf}
+    {#if subGltf && $subGltf && i === 0}
+      <Floor offset={0} geometry={$subGltf.nodes["Floor"].geometry} />
+    {:else if lobbyGltf && $lobbyGltf && subGltf && i === 1}
+      <Floor offset={0} geometry={$lobbyGltf.nodes["Floor"].geometry} />
+    {:else if lobbyGltf && $lobbyGltf && i === 0 && !subGltf}
       <Floor offset={0} geometry={$lobbyGltf.nodes["Floor"].geometry} />
     {:else}
-      {@const offset = modelData.lobby
-        ? modelData.lobby[1]
-        : modelData.default[1] + modelData.default[1] * (i - 1)}
+      {@const idxOffset = (subGltf ? 1 : 0) + (lobbyGltf ? 1 : 0)}
+      {@const offset =
+        (modelData.lobby ? modelData.lobby[1] : 0) +
+        modelData.default[1] * (i - idxOffset)}
       <Floor
         {offset}
         geometry={$defaultGltf.nodes["Floor"].geometry}
@@ -71,4 +105,4 @@
   {#if roofGltf && $roofGltf}
     <Floor offset={floorHeight} geometry={$roofGltf.nodes["Floor"].geometry} />
   {/if}
-{/if}
+{/if} -->

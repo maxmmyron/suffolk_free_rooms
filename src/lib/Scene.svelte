@@ -1,57 +1,30 @@
 <script lang="ts">
   import { currentBuilding, cameraAnimator } from "$lib/stores";
-  import { floorMap } from "$lib";
   import { T } from "@threlte/core";
-  import {
-    OrbitControls,
-    Sky,
-    interactivity,
-    transitions,
-  } from "@threlte/extras";
+  import { interactivity, transitions } from "@threlte/extras";
   import Building from "./Building.svelte";
   import { SheetObject } from "@threlte/theatre";
   import CameraAnimator from "./CameraAnimator.svelte";
-  import {
-    Sphere,
-    Vector3,
-    type OrthographicCamera,
-    type PerspectiveCamera,
-  } from "three";
+  import { Sphere, Vector3 } from "three";
 
   export let availableRooms: [string, string][];
-
-  $: data = floorMap.get($currentBuilding)!;
-
-  let camera: PerspectiveCamera | OrthographicCamera;
 
   // bind height so we can refit camera
   let height: number;
 
-  $: if ($cameraAnimator) {
-    // @ts-ignore
-    camera = $cameraAnimator._camera;
-  }
-
   interactivity();
   transitions();
 
-  $: ((building: App.Building) => {
+  $: ((_: App.Building) => {
     if (!$cameraAnimator) {
       console.log("Camera animator not found");
       return;
     }
 
-    if (building === "Rosalie K. Stahl Bldg") {
-      let sphere = new Sphere(new Vector3(0, height / 2, 0), height / 2);
-      $cameraAnimator.fitToSphere(sphere, true);
-      return;
-    }
-
     let sphere = new Sphere(
-      new Vector3(0, data.floors.length / 2, 0),
-      Math.max(data.floors.length * 0.7, 6)
+      new Vector3(0, Math.max(15, height / 6), 0),
+      Math.min(height, 120)
     );
-
     $cameraAnimator.fitToSphere(sphere, true);
   })($currentBuilding);
 </script>
@@ -63,7 +36,7 @@
   <Transform>
     <T.PerspectiveCamera
       makeDefault
-      position={[15, 10, -15]}
+      position={[15, 5, -15]}
       on:create={({ ref }) => {
         ref.lookAt(0, 5, 0);
       }}
@@ -72,6 +45,7 @@
         on:create={({ ref }) => {
           $cameraAnimator = ref;
         }}
+        autoRotate
       />
       <!-- <OrbitControls /> -->
     </T.PerspectiveCamera>
@@ -79,16 +53,9 @@
 </SheetObject>
 
 {#key $currentBuilding}
-  {#if data}
-    {@const buildingRooms = availableRooms.filter(
-      (p) => p[0] === $currentBuilding
-    )}
-    <Building
-      building={$currentBuilding}
-      floors={data.floors}
-      rooms={buildingRooms}
-      modelData={data.modelData}
-      bind:height
-    />
-  {/if}
+  <Building
+    building={$currentBuilding}
+    rooms={availableRooms.filter((p) => p[0] === $currentBuilding)}
+    bind:height
+  />
 {/key}

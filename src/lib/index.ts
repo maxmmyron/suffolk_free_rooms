@@ -28,9 +28,12 @@ export const floorMap: Map<
   {
     floors: string[];
     modelData: {
-      lobby?: [string, number]
       default: [string, number];
-      roof?: [string, number?];
+      roof?: [string, number];
+      [key: string]: [string, number] | undefined;
+    },
+    modelMap?: {
+      [key: string]: string;
     }
   }
 > = new Map([
@@ -43,9 +46,13 @@ export const floorMap: Map<
         "B",
         ...Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
       ],
+      modelMap: {
+        "11": "top",
+      },
       modelData: {
-        default: ["/sawyer/floor.gltf", 4.02968],
-        roof: ["/sawyer/roof.gltf"],
+        default: ["/sawyer/default.gltf", 3.0727],
+        top: ["/sawyer/top.gltf", 5.84639],
+        roof: ["/sawyer/roof.gltf", 5.10275],
       }
     },
   ],
@@ -54,9 +61,12 @@ export const floorMap: Map<
     "Rosalie K. Stahl Bldg",
     {
       floors: Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
+      modelMap: {
+        "0": "lobby",
+      },
       modelData: {
         lobby: ["/stahl/lobby.gltf", 5],
-        default: ["/stahl/floor.gltf", 4.02968],
+        default: ["/stahl/default.gltf", 4.02968],
         roof: ["/stahl/roof.gltf", 15.5444],
       }
     },
@@ -69,9 +79,15 @@ export const floorMap: Map<
         "B",
         ...Array.from({ length: 8 }).map((_, i) => (i + 1).toString()),
       ],
+      modelMap: {
+        "B": "sub",
+        "0": "lobby",
+      },
       modelData: {
-        default: ["/samia/floor.gltf", 4.02968],
-        roof: ["/samia/roof.gltf"],
+        sub: ["/samia/sub.gltf", 4.0],
+        lobby: ["/samia/lobby.gltf", 5.00],
+        default: ["/samia/default.gltf", 3.75],
+        roof: ["/samia/roof.gltf", 8.53129],
       }
     },
   ],
@@ -90,7 +106,7 @@ export const floorMap: Map<
   ["1 Beacon", {
     floors: ["1"],
     modelData: {
-      default: ["/beacon/floor.gltf", 8],
+      default: ["/beacon/default.gltf", 8],
       roof: ["/beacon/roof.gltf", 147.901],
     }
   }],
