@@ -26,7 +26,7 @@
    */
   export let transitionHeight: number = 400;
 
-  let color = hasFreeRooms ? "red" : "white";
+  $: color = hasFreeRooms ? "red" : "white";
 
   const component = forwardEventHandlers();
 

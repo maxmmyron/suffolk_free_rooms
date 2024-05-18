@@ -37,7 +37,7 @@
    */
   const getFloorHeight = (floors: string[], i: number = -1): number => {
     let sum = 0;
-    for (let j = 0; j <= floors.length; j++) {
+    for (let j = 0; j < floors.length; j++) {
       if (j === i) return sum;
 
       if (modelMap && modelMap[floors[j]]) {
@@ -51,8 +51,8 @@
   };
 
   // WARNING: this is a hack to get around the lack of typescript syntax in svelte html (thank god for svelte 5)
-  const getModel_HACK = (floor: string) => {
-    return modelStores.get(floor)!;
+  const getModel_HACK = (model: string) => {
+    return modelStores.get(model)!;
   };
 
   export const height =
@@ -65,11 +65,13 @@
   {@const offset = getFloorHeight(floors, i)}
   {@const hasFreeRooms =
     getAvailableFloorRooms(building, rooms, floor).length !== 0}
-  {#if modelMap && modelMap[floor]}
-    {#if modelStores.get(floor)}
-      {@debug floor}
-      <Floor {offset} store={getModel_HACK(floor)} {hasFreeRooms} {floor} />
-    {/if}
+  {#if modelMap && modelMap[floor] && modelStores.get(modelMap[floor])}
+    <Floor
+      {offset}
+      store={getModel_HACK(modelMap[floor])}
+      {hasFreeRooms}
+      {floor}
+    />
   {:else}
     <Floor {offset} store={getModel_HACK("default")} {hasFreeRooms} {floor} />
   {/if}
@@ -78,31 +80,3 @@
 {#if modelStores.has("roof")}
   <Floor offset={getFloorHeight(floors)} store={getModel_HACK("roof")} />
 {/if}
-
-<!--
-{#if $defaultGltf}
-  {#each floors as floor, i}
-    {#if subGltf && $subGltf && i === 0}
-      <Floor offset={0} geometry={$subGltf.nodes["Floor"].geometry} />
-    {:else if lobbyGltf && $lobbyGltf && subGltf && i === 1}
-      <Floor offset={0} geometry={$lobbyGltf.nodes["Floor"].geometry} />
-    {:else if lobbyGltf && $lobbyGltf && i === 0 && !subGltf}
-      <Floor offset={0} geometry={$lobbyGltf.nodes["Floor"].geometry} />
-    {:else}
-      {@const idxOffset = (subGltf ? 1 : 0) + (lobbyGltf ? 1 : 0)}
-      {@const offset =
-        (modelData.lobby ? modelData.lobby[1] : 0) +
-        modelData.default[1] * (i - idxOffset)}
-      <Floor
-        {offset}
-        geometry={$defaultGltf.nodes["Floor"].geometry}
-        hasFreeRooms={getAvailableFloorRooms(building, rooms, floor).length !==
-          0}
-        {floor}
-      />
-    {/if}
-  {/each}
-  {#if roofGltf && $roofGltf}
-    <Floor offset={floorHeight} geometry={$roofGltf.nodes["Floor"].geometry} />
-  {/if}
-{/if} -->
