@@ -33,7 +33,8 @@ export const floorMap: Map<
       [key: string]: [string, number] | undefined;
     },
     modelMap?: {
-      [key: string]: string;
+      // FIXME: why is this union of string | undefined necessary? removing undefined causes ts err 2322
+      [key: string]: string | undefined;
     }
   }
 > = new Map([
@@ -97,8 +98,8 @@ export const floorMap: Map<
     {
       floors: Array.from({ length: 5 }).map((_, i) => (i + 1).toString()),
       modelData: {
-        default: ["/sargent/floor.gltf", 4.02968],
-        roof: ["/sawyer/roof.gltf"],
+        default: ["/sargent/default.gltf", 4.84507],
+        roof: ["/sawyer/roof.gltf", 14.3882],
       }
     },
   ],
