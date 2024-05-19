@@ -99,7 +99,7 @@ export const floorMap: Map<
       floors: Array.from({ length: 5 }).map((_, i) => (i + 1).toString()),
       modelData: {
         default: ["/sargent/default.gltf", 4.84507],
-        roof: ["/sawyer/roof.gltf", 14.3882],
+        roof: ["/sargent/roof.gltf", 14.3882],
       }
     },
   ],

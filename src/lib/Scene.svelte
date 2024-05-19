@@ -1,7 +1,7 @@
 <script lang="ts">
   import { currentBuilding, cameraAnimator } from "$lib/stores";
   import { T } from "@threlte/core";
-  import { interactivity, transitions } from "@threlte/extras";
+  import { OrbitControls, interactivity, transitions } from "@threlte/extras";
   import Building from "./Building.svelte";
   import { SheetObject } from "@threlte/theatre";
   import CameraAnimator from "./CameraAnimator.svelte";
@@ -45,9 +45,9 @@
         on:create={({ ref }) => {
           $cameraAnimator = ref;
         }}
-        autoRotate
+        autoRotate={false}
+        enabled={true}
       />
-      <!-- <OrbitControls /> -->
     </T.PerspectiveCamera>
   </Transform>
 </SheetObject>

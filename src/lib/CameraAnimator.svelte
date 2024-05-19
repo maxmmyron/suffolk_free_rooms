@@ -63,8 +63,9 @@
   const { renderer, invalidate } = useThrelte();
 
   // TODO: implement
-  export let autoRotate = false;
+  export let autoRotate = true;
   export let rotateSpeed = 1;
+  export let enabled = false;
 
   export const ref = new CameraControls(
     $parent as PerspectiveCamera,
@@ -93,6 +94,6 @@
   const forwardingComponent = forwardEventHandlers();
 </script>
 
-<T is={ref} {...$$restProps} bind:this={$forwardingComponent} enabled={false}>
+<T is={ref} {...$$restProps} bind:this={$forwardingComponent} {enabled}>
   <slot {ref} />
 </T>
