@@ -1,11 +1,17 @@
 <script lang="ts">
   import { currentBuilding, cameraAnimator } from "$lib/stores";
   import { T } from "@threlte/core";
-  import { interactivity, transitions } from "@threlte/extras";
+  import { interactivity, transitions, Environment } from "@threlte/extras";
   import Building from "./Building.svelte";
   import { SheetObject } from "@threlte/theatre";
   import CameraAnimator from "./CameraAnimator.svelte";
-  import { Sphere, Vector3 } from "three";
+  import {
+    Mesh,
+    MeshStandardMaterial,
+    PlaneGeometry,
+    Sphere,
+    Vector3,
+  } from "three";
 
   export let availableRooms: [string, string][];
 
@@ -29,27 +35,41 @@
   })($currentBuilding);
 </script>
 
-<T.AmbientLight intensity={0.5} />
-<T.DirectionalLight position={[0, 10, 10]} castShadow />
+<Environment
+  path="/envmap/"
+  files="urban_4k.hdr"
+  isBackground={true}
+  format="hdr"
+/>
 
-<SheetObject key="camera" let:Transform>
-  <Transform>
-    <T.PerspectiveCamera
-      makeDefault
-      position={[15, 5, -15]}
-      on:create={({ ref }) => {
-        ref.lookAt(0, 5, 0);
-      }}
-    >
-      <CameraAnimator
-        on:create={({ ref }) => {
-          $cameraAnimator = ref;
-        }}
-        autoRotate={false}
-      />
-    </T.PerspectiveCamera>
-  </Transform>
-</SheetObject>
+<T.AmbientLight intensity={0.5} />
+<T.DirectionalLight position={[0, 1, 1]} castShadow />
+<!-- <T.DirectionalLight position={[-10, 10, 10]} castShadow /> -->
+
+<T.PerspectiveCamera
+  makeDefault
+  position={[15, 5, -15]}
+  on:create={({ ref }) => {
+    ref.lookAt(0, 5, 0);
+  }}
+>
+  <CameraAnimator
+    on:create={({ ref }) => {
+      $cameraAnimator = ref;
+    }}
+    autoRotate={false}
+    enabled={true}
+  />
+</T.PerspectiveCamera>
+
+<T.Mesh
+  geometry={new PlaneGeometry(500, 500)}
+  material={new MeshStandardMaterial({
+    color: "white",
+  })}
+  receiveShadow
+  rotation.x={-Math.PI / 2}
+/>
 
 {#key $currentBuilding}
   <Building

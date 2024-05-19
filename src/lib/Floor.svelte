@@ -6,7 +6,7 @@
     useCursor,
     type ThrelteGltf,
   } from "@threlte/extras";
-  import { Mesh, MeshLambertMaterial } from "three";
+  import { Mesh, MeshLambertMaterial, MeshPhysicalMaterial } from "three";
   import { cubicOut } from "svelte/easing";
 
   export let offset: number;
@@ -82,7 +82,10 @@
         e.stopPropagation();
         $currentFloor = floor;
       }}
-      material={new MeshLambertMaterial({
+      material={new MeshPhysicalMaterial({
+        metalness: 0.0,
+        roughness: 0.5,
+        reflectivity: 0.8,
         color,
       })}
     />
