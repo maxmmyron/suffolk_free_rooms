@@ -63,7 +63,7 @@ export const floorMap: Map<
     {
       floors: Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
       modelMap: {
-        "0": "lobby",
+        "1": "lobby",
       },
       modelData: {
         lobby: ["/stahl/lobby.gltf", 5],

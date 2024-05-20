@@ -62,14 +62,14 @@
   />
 </T.PerspectiveCamera>
 
-<T.Mesh
+<!-- <T.Mesh
   geometry={new PlaneGeometry(500, 500)}
   material={new MeshStandardMaterial({
     color: "white",
   })}
   receiveShadow
   rotation.x={-Math.PI / 2}
-/>
+/> -->
 
 {#key $currentBuilding}
   <Building
