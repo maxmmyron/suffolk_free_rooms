@@ -97,7 +97,11 @@ export const floorMap: Map<
     "Sargent Hall",
     {
       floors: Array.from({ length: 5 }).map((_, i) => (i + 1).toString()),
+      modelMap: {
+        "1": "lobby",
+      },
       modelData: {
+        lobby: ["/sargent/lobby.gltf", 8.40353],
         default: ["/sargent/default.gltf", 4.84507],
         roof: ["/sargent/roof.gltf", 14.3882],
       }
