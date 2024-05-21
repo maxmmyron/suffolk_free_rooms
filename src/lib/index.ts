@@ -26,12 +26,30 @@ export const getAvailableFloorRooms = (
 export const floorMap: Map<
   App.Building,
   {
+    /**
+     * An array of floor numbers for the building. Floors are rendered in the order they appear in the array.
+     */
     floors: string[];
+    /**
+     * A mapping between model names and their respective file paths and heights. The height is the height of the model in units.
+     */
     modelData: {
+      /**
+       * The default model to be used for each floor. If a floor is not mapped to a custom model with the modelMap property, then it will use this default model.
+       */
       default: [string, number];
+      /**
+       * An optional roof model to be used after every floor is rendered.
+       */
       roof?: [string, number];
+      /**
+       * Optional custom models for specific floors. The key is referenced in the modelMap property to determine which model to use for a specific floor.
+       */
       [key: string]: [string, number] | undefined;
     },
+    /**
+     * A mapping between floor numbers and custom models.
+     */
     modelMap?: {
       // FIXME: why is this union of string | undefined necessary? removing undefined causes ts err 2322
       [key: string]: string | undefined;
@@ -82,13 +100,15 @@ export const floorMap: Map<
       ],
       modelMap: {
         "B": "sub",
-        "0": "lobby",
+        "1": "lobby",
+        "2": "default2",
       },
       modelData: {
-        sub: ["/samia/sub.gltf", 4.0],
-        lobby: ["/samia/lobby.gltf", 5.00],
-        default: ["/samia/default.gltf", 3.75],
-        roof: ["/samia/roof.gltf", 8.53129],
+        sub: ["/samia/sub.gltf", 6.80336],
+        lobby: ["/samia/lobby.gltf", 6.81531],
+        default2: ["/samia/default2.gltf", 6.80336],
+        default: ["/samia/default.gltf", 6.80336],
+        roof: ["/samia/roof.gltf", 5.90007],
       }
     },
   ],
