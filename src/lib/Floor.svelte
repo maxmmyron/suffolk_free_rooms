@@ -26,7 +26,7 @@
    */
   export let transitionHeight: number = 400;
 
-  $: color = hasFreeRooms ? "red" : "white";
+  $: color = hasFreeRooms ? "#ddffdd" : "#666666";
 
   const component = forwardEventHandlers();
 
@@ -72,11 +72,11 @@
       on:pointerleave={onPointerLeave}
       on:pointerenter={(e) => {
         e.stopPropagation();
-        if (hasFreeRooms) color = "blue";
+        if (hasFreeRooms) color = "#aaffaa";
       }}
       on:pointerleave={(e) => {
         e.stopPropagation();
-        if (hasFreeRooms) color = "red";
+        if (hasFreeRooms) color = "#ddffdd";
       }}
       on:click={(e) => {
         e.stopPropagation();
