@@ -1,17 +1,18 @@
 <script lang="ts">
   import { currentBuilding, cameraAnimator } from "$lib/stores";
-  import { T } from "@threlte/core";
-  import { interactivity, transitions, Environment } from "@threlte/extras";
+  import { T, useThrelte } from "@threlte/core";
+  import { Environment, interactivity, transitions } from "@threlte/extras";
   import Building from "./Building.svelte";
-  import { SheetObject } from "@threlte/theatre";
   import CameraAnimator from "./CameraAnimator.svelte";
   import {
-    Mesh,
-    MeshStandardMaterial,
-    PlaneGeometry,
+    CameraHelper,
+    DirectionalLight,
+    DirectionalLightHelper,
     Sphere,
     Vector3,
   } from "three";
+  import { onMount } from "svelte";
+  import { DEG2RAD } from "three/src/math/MathUtils.js";
 
   export let availableRooms: [string, string][];
 
@@ -33,6 +34,17 @@
     );
     $cameraAnimator.fitToSphere(sphere, true);
   })($currentBuilding);
+
+  let light: DirectionalLight;
+
+  const { scene, camera, invalidate } = useThrelte();
+
+  onMount(() => {
+    scene.add(new DirectionalLightHelper(light, 5));
+  });
+
+  // invalidate();
+  // scene.add(new CameraHelper($camera));
 </script>
 
 <Environment
@@ -42,9 +54,20 @@
   format="hdr"
 />
 
-<T.AmbientLight intensity={0.5} />
-<T.DirectionalLight position={[0, 1, 1]} castShadow />
-<!-- <T.DirectionalLight position={[-10, 10, 10]} castShadow /> -->
+<!-- <T.AmbientLight intensity={0.5} /> -->
+<!-- <T.DirectionalLight
+  bind:ref={light}
+  position={[40, 50, 40]}
+  castShadow={true}
+  shadow.mapSize.width={1024}
+  shadow.mapSize.height={1024}
+  shadow.camera.near={0.1}
+  shadow.camera.far={500}
+  shadow.camera.left={-50}
+  shadow.camera.right={50}
+  shadow.camera.top={50}
+  shadow.camera.bottom={-50}
+/> -->
 
 <T.PerspectiveCamera
   makeDefault
@@ -52,6 +75,8 @@
   on:create={({ ref }) => {
     ref.lookAt(0, 5, 0);
   }}
+  let:ref={camera}
+  far={10000}
 >
   <CameraAnimator
     on:create={({ ref }) => {
@@ -62,15 +87,6 @@
   />
 </T.PerspectiveCamera>
 
-<!-- <T.Mesh
-  geometry={new PlaneGeometry(500, 500)}
-  material={new MeshStandardMaterial({
-    color: "white",
-  })}
-  receiveShadow
-  rotation.x={-Math.PI / 2}
-/> -->
-
 {#key $currentBuilding}
   <Building
     building={$currentBuilding}
@@ -78,3 +94,8 @@
     bind:height
   />
 {/key}
+
+<T.Mesh rotation.x={-90 * DEG2RAD} receiveShadow>
+  <T.PlaneGeometry args={[1000, 1000]} />
+  <T.MeshStandardMaterial color="#00ff00" />
+</T.Mesh>

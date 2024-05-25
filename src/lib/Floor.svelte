@@ -6,7 +6,12 @@
     useCursor,
     type ThrelteGltf,
   } from "@threlte/extras";
-  import { Mesh, MeshLambertMaterial, MeshPhysicalMaterial } from "three";
+  import {
+    Mesh,
+    MeshLambertMaterial,
+    MeshPhysicalMaterial,
+    MeshStandardMaterial,
+  } from "three";
   import { cubicOut } from "svelte/easing";
 
   export let offset: number;
@@ -61,9 +66,10 @@
 
 {#if $store}
   <T.Group {...$$restProps} bind:this={$component}>
+    <T.Mesh></T.Mesh>
     <T.Mesh
-      castShadow
-      receiveShadow
+      castShadow={true}
+      receiveShadow={true}
       in={fly}
       out={fly}
       position.y={offset}
@@ -82,10 +88,7 @@
         e.stopPropagation();
         $currentFloor = floor;
       }}
-      material={new MeshPhysicalMaterial({
-        metalness: 0.0,
-        roughness: 0.5,
-        reflectivity: 0.8,
+      material={new MeshStandardMaterial({
         color,
       })}
     />

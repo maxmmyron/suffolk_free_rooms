@@ -41,6 +41,7 @@
       if (j === i) return sum;
 
       if (modelMap && modelMap[floors[j]]) {
+        // @ts-ignore
         sum += modelData[modelMap[floors[j]]]![1];
       } else {
         sum += modelData.default[1];

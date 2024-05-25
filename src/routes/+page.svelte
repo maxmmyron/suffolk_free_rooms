@@ -1,9 +1,7 @@
 <script lang="ts">
-  import Building from "$lib/Building.svelte";
   import { currentBuilding, currentFloor } from "$lib/stores";
   import Scene from "$lib/Scene.svelte";
-  import { Canvas, type ThrelteContext } from "@threlte/core";
-  import { Studio, Theatre } from "@threlte/theatre";
+  import { Canvas } from "@threlte/core";
   import { floorMap, getAvailableFloorRooms } from "$lib";
 
   export let data: App.SectionData;
@@ -204,9 +202,7 @@
 
   <div bind:clientWidth={canvasWidth} bind:clientHeight={canvasHeight}>
     <Canvas size={{ width: canvasWidth, height: canvasHeight }}>
-      <Theatre>
-        <Scene bind:availableRooms />
-      </Theatre>
+      <Scene bind:availableRooms />
     </Canvas>
   </div>
 </main>
