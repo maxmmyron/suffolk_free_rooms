@@ -54,8 +54,7 @@
   format="hdr"
 />
 
-<!-- <T.AmbientLight intensity={0.5} /> -->
-<!-- <T.DirectionalLight
+<T.DirectionalLight
   bind:ref={light}
   position={[40, 50, 40]}
   castShadow={true}
@@ -67,7 +66,7 @@
   shadow.camera.right={50}
   shadow.camera.top={50}
   shadow.camera.bottom={-50}
-/> -->
+/>
 
 <T.PerspectiveCamera
   makeDefault
