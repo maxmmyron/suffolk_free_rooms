@@ -1,44 +1,10 @@
 <script lang="ts">
-  export let data: {
-    [building: string]: {
-      [room: string]: {
-        [section: string]: {
-          startTime: string;
-          endTime: string;
-          weekDays: number[];
-        };
-      };
-    };
-  };
+  import { currentBuilding, currentFloor } from "$lib/stores";
+  import Scene from "$lib/Scene.svelte";
+  import { Canvas } from "@threlte/core";
+  import { floorMap, getAvailableFloorRooms } from "$lib";
 
-  const floorMap = new Map([
-    // SAWYER: A, B, 1-11
-    [
-      "Sawyer",
-      [
-        "A",
-        "B",
-        ...Array.from({ length: 11 }).map((_, i) => (i + 1).toString()),
-      ],
-    ],
-    // STAHL: 1-9
-    [
-      "Rosalie K. Stahl Bldg",
-      [...Array.from({ length: 9 }).map((_, i) => (i + 1).toString())],
-    ],
-    // SAMIA: B, 1-8
-    [
-      "Samia Academic Center",
-      ["B", ...Array.from({ length: 8 }).map((_, i) => (i + 1).toString())],
-    ],
-    // SARGENT: 1-5
-    [
-      "Sargent Hall",
-      [...Array.from({ length: 5 }).map((_, i) => (i + 1).toString())],
-    ],
-    // BEACON: 1
-    ["1 Beacon", ["1"]],
-  ]);
+  export let data: App.SectionData;
 
   let date = new Date();
   $: time = date.getTime();
@@ -171,189 +137,82 @@
     ]);
   };
 
-  /**
-   * Gets the floor a room is on based on the building
-   * @param building
-   * @param rooms
-   */
-  const getAvailableFloorRooms = (
-    building: string,
-    rooms: [string, string][],
-    floor: string
-  ): [string, string][] => {
-    switch (building) {
-      case "Sawyer":
-        // EITHER XYY or XXYY, so trim away YY to get X/XX (floor)
-        return rooms.filter(([_, r]) => r.substring(0, r.length - 2) === floor);
-      case "Rosalie K. Stahl Bldg":
-        return rooms.filter(([_, r]) => r[0] === floor);
-      case "Samia Academic Center":
-        return rooms.filter(([_, r]) => r[0] === floor);
-      case "Sargent Hall":
-        return rooms.filter(([_, r]) => r[0] === floor);
-      default:
-        return rooms;
-    }
-  };
+  let canvasWidth: number;
+  let canvasHeight: number;
 </script>
 
-<label>
-  <input
-    type="datetime-local"
-    on:input={(e) => {
-      date = new Date(e.currentTarget.value);
-    }}
-  />
-  <output>{date.toString()}</output>
-</label>
+<main>
+  <aside>
+    <label>
+      <input
+        type="datetime-local"
+        on:input={(e) => {
+          date = new Date(e.currentTarget.value);
+        }}
+      />
+      <output>{date.toString()}</output>
+    </label>
 
-<div class="buildings">
-  {#each Object.entries(data) as [building, rooms]}
-    {@const availableBuildingRooms = availableRooms.filter(
-      (p) => p[0] === building
-    )}
-    {@const floors = floorMap.get(building)}
-    {#if floors}
-      <div class="building">
-        <h1>{building}</h1>
-        {#each floors.toReversed() as floor, i}
-          {@const availableFloorRooms = getAvailableFloorRooms(
+    <label>
+      <select
+        bind:value={$currentBuilding}
+        on:change={() => {
+          $currentFloor = null;
+        }}
+      >
+        <option value="Sawyer">Sawyer</option>
+        <option value="Rosalie K. Stahl Bldg">Rosalie K. Stahl Bldg</option>
+        <option value="Samia Academic Center">Samia Academic Center</option>
+        <option value="Sargent Hall">Sargent Hall</option>
+        <option value="1 Beacon">1 Beacon</option>
+      </select>
+    </label>
+
+    {#if $currentFloor && floorMap
+        .get($currentBuilding)
+        ?.floors.includes($currentFloor)}
+      {@const availableBuildingRooms = availableRooms.filter(
+        (p) => p[0] === $currentBuilding
+      )}
+
+      {@const availableFloorRooms = getAvailableFloorRooms(
+        $currentBuilding,
+        availableBuildingRooms,
+        $currentFloor
+      )}
+
+      <ul>
+        {#each availableFloorRooms as [building, room]}
+          {@const [startFree, endFree] = calcEmptyRoomTimes(
             building,
-            availableBuildingRooms,
-            floor
+            room,
+            time
           )}
-          <div
-            class="floor"
-            style="z-index: {floors.length * 2 - i * 2};"
-            data-has-rooms={availableFloorRooms.length !== 0}
-          >
-            <div class="face horz front">{floor}</div>
-            <div class="face horz back"></div>
-            <div class="face horz left"></div>
-            <div class="face horz right"></div>
-            <div class="face bottom"></div>
-          </div>
-          {#if availableFloorRooms.length}
-            <ul style="z-index: {floors.length * 2 - i};">
-              {#each availableFloorRooms as [building, room]}
-                {@const [startFree, endFree] = calcEmptyRoomTimes(
-                  building,
-                  room,
-                  time
-                )}
-                {@const startFreeTime = new Date(
-                  startFree
-                ).toLocaleTimeString()}
-                {@const endFreeTime = new Date(endFree).toLocaleTimeString()}
-                <li>
-                  {building}
-                  {room} <br />
-                  {startFreeTime} - {endFreeTime}
-                </li>
-              {/each}
-            </ul>
-          {/if}
+          {@const startFreeTime = new Date(startFree).toLocaleTimeString()}
+          {@const endFreeTime = new Date(endFree).toLocaleTimeString()}
+          <li>
+            {building}
+            {room} <br />
+            {startFreeTime} - {endFreeTime}
+          </li>
         {/each}
-      </div>
+      </ul>
     {/if}
-  {/each}
-</div>
+  </aside>
+
+  <div bind:clientWidth={canvasWidth} bind:clientHeight={canvasHeight}>
+    <Canvas size={{ width: canvasWidth, height: canvasHeight }}>
+      <Scene bind:availableRooms />
+    </Canvas>
+  </div>
+</main>
 
 <style>
-  .buildings {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  .building {
+  main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: 200px 300px;
-    justify-items: center;
-    align-items: flex-end;
-    flex-shrink: 0;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid black;
-    margin-bottom: 2rem;
-    perspective: none;
-
-    & > h1 {
-      grid-area: 1/1/1/3;
-    }
-
-    & > .floor {
-      grid-column: 1;
-      position: relative;
-      width: 120px;
-      height: 32px;
-      margin-bottom: -2px;
-      transform-style: preserve-3d;
-      transform: rotateY(46deg) rotateX(-12deg) rotateZ(-12deg);
-
-      &[data-had-rooms="true"] {
-        border-bottom: 1px dashed rgb(128, 128, 128);
-      }
-
-      & + ul {
-        position: relative;
-      }
-
-      /* target ul sibling */
-      &[data-has-rooms="true"] + ul::after {
-        --width: 120px;
-        --height: 16px;
-        content: "";
-        width: var(--width);
-        height: var(--height);
-        position: absolute;
-        bottom: 12px;
-        left: calc(20px - var(--width));
-        pointer-events: none;
-        border-radius: 8px 0 0 0;
-        border: 2px dashed rgb(40, 40, 40);
-        border-width: 2px 0 0 2px;
-      }
-
-      & > .face {
-        display: block;
-        position: absolute;
-        backface-visibility: visible;
-        outline: 1px solid transparent;
-      }
-
-      & > .horz {
-        width: 120px;
-        height: 100%;
-      }
-
-      & > .front {
-        background-color: rgb(128, 128, 128);
-        transform: translateZ(60px);
-        border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
-      }
-
-      & > .back {
-        background-color: rgb(100, 100, 100);
-        transform: rotateY(180deg) translateZ(60px);
-      }
-
-      & > .left {
-        background-color: rgb(200, 200, 200);
-        transform: rotateY(-90deg) translateZ(60px);
-        border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
-      }
-
-      & > .right {
-        background-color: rgb(80, 80, 80);
-        transform: rotateY(90deg) translateZ(60px);
-      }
-
-      & > .bottom {
-        width: 118px;
-        height: 118px;
-        background-color: rgb(40, 40, 40);
-        transform: rotateX(-90deg) translateZ(-30px) translateX(1px);
-      }
-    }
+    grid-template-columns: 200px 1fr;
   }
 </style>

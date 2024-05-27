@@ -1,0 +1,110 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Floor"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "samia",
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "BOS-MMTLX-GIJXK-4E2RN.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 30,
+            "max" : [
+                18.035823822021484,
+                6.8033623695373535,
+                11.924260139465332
+            ],
+            "min" : [
+                -15.627158164978027,
+                0,
+                -18.378734588623047
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 30,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 30,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 48,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 360,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 360,
+            "byteOffset" : 360
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 720
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96,
+            "byteOffset" : 960
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1056,
+            "uri" : "data:application/octet-stream;base64,LZgmQQAAAAAz5DNBLZgmQQAAAAAz5DNB1wh6wQAAAADEyT5B1wh6wQAAAADEyT5B7FEzQQAAAAAWKYFA7FEzQQAAAAAWKYFAWIiEQQAAAACqI31AWIiEQQAAAACqI31AXkmQQQAAAACmB5PBXkmQQQAAAACmB5PBy5N5wQAAAADxaIzBy5N5wQAAAADxaIzBLZgmQSW12UA05DNBLZgmQSW12UA05DNBLZgmQSW12UA05DNB7FEzQSW12UAYKYFA7FEzQSW12UAYKYFA7FEzQSW12UAYKYFAXkmQQSW12UCmB5PBXkmQQSW12UCmB5PBXkmQQSW12UCmB5PB1wh6wSW12UDFyT5B1wh6wSW12UDFyT5B1wh6wSW12UDFyT5BWIiEQSW12UCuI31AWIiEQSW12UCuI31AWIiEQSW12UCuI31Ay5N5wSW12UDwaIzBy5N5wSW12UDwaIzBy5N5wSW12UDwaIzBPi4kPSDkxTwyuH8/1Qh/Px2ZZLyEY689X+l/v5e/vTyOPUs8WOVJPWYeW7x5qn8/XoY1PbwuirxHtn8/ssh+PxBm7zyGL749POvvPExOyTwW0H8/CMJ/P4F3aLyZVCg95PZQvaYgerwBo3+/15V/P8Ca2DwMWk49j+N/v/RKeLxK7s48A8AivRff1jyutX+/Ar+uvOPwfz+WYyK7QDkCOwmZZDx++X8/kv5+Py0gN7tgQbU9/4lpPO/2fz/5dwy8TCiUPOIOhryA7H8/W319P14uijxpAQ4+gNT8vK5PX7yw2n+/PGfavHLhfz/Ay3O8aeJ+P7ghejzGaLw9DOd/v2keWzz+r8W8bQxNPP/4fz9Ur/e78iYJPcUhT7wE1n8/9B66vBXvfz8QtF+5sCsbvMt2aDx29n8/fMN/P9HBCrqc9y89xO1/v5fahLuFWL48kZvWOhBMeDxi+H+/DffGPEPsfz+v6WY7p/mLPtHxBT84KEg/4CM7PyFm0T7CyCk/mUgKP9HxBT/H1VA/pG0YP6FiWD/gIzs/oWJYP6RtGD+Klwg+Zi3pPplICj/wTBc/OFoQO2Yt6T4hZtE+hxRuP6f5iz7wTBc/mFIoOxlvKT+n+Ys+zm7rPjgoSD9LXks/sH2KPVRdKz/H1VA/DqgoP6FiWD9LXks/mUgKP4YSBz8/uIk+LAM6PzhaEDuSuMg+9drxPsLIKT84WhA7zm7rPplICj/Obus+OIyJPWkBNj+hYlg/DqgoP4qXCD6SuMg+9drxPocUbj+n+Ys+hhIHPz64iT7ObO4+FAAaAAcAFAAHAAkAEQAOAAEAEQABAAUAFQAbAAoAFQAKAAIADQAXAAMADQADAAAAGQAQAAQAGQAEAAYAHAASAAgAHAAIAAsAGAATAB0AHQAWAAwADwAYAB0AHQAMAA8A"
+        }
+    ]
+}
