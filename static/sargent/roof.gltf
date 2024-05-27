@@ -15,12 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "sargent_roof",
-            "translation" : [
-                137.08583068847656,
-                -3.814697265625e-06,
-                0
-            ]
+            "name" : "Floor"
         }
     ],
     "materials" : [

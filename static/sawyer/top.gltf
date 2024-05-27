@@ -15,12 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "sawyer_default_2",
-            "translation" : [
-                -63.49222183227539,
-                0,
-                0
-            ]
+            "name" : "Floor"
         }
     ],
     "materials" : [

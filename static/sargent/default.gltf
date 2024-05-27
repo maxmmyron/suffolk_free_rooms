@@ -15,12 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "sargent_default",
-            "translation" : [
-                0,
-                -3.814697265625e-06,
-                0
-            ]
+            "name" : "Floor"
         }
     ],
     "materials" : [

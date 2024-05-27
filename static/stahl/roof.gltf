@@ -15,12 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "stahl_roof",
-            "scale" : [
-                1,
-                0.9999971389770508,
-                1
-            ]
+            "name" : "Floor"
         }
     ],
     "materials" : [

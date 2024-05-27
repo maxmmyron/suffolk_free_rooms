@@ -15,12 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "samia2_sub",
-            "translation" : [
-                -155.28829956054688,
-                0,
-                0
-            ]
+            "name" : "Floor"
         }
     ],
     "materials" : [

@@ -15,7 +15,7 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "beacon_roof"
+            "name" : "Floor"
         }
     ],
     "materials" : [
